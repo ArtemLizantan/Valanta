@@ -1,0 +1,9 @@
+git pull origin denis  // запушить ветку (не мейн!)
+
+git init // создать репу
+git commit -m ""// закоммитить файлы(сохранить)
+git branch// просмотреть - создать ветку
+git status// статус
+git push// добавить в репу 
+git pull// скачать с репы
+git merge// замерджить 
