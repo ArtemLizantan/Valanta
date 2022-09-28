@@ -1,3 +1,4 @@
+@import '/node_modules/swiper/swiper-bundle.min.css';
 .main {
   min-height: calc(100vh - 513px);
   flex: 1 1 auto;

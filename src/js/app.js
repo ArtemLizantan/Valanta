@@ -14,3 +14,8 @@ import {
 import {
     header
 } from "./modules/header.js"
+
+import swiper, { Navigation, Pagination } from 'swiper';
+import {
+    swiper
+} from "./modules/heroSwiper.js"
