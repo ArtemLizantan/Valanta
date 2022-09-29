@@ -15,3 +15,6 @@ import {
     header
 } from "./modules/first-page/header.js"
 
+import {
+    hotelSwiper
+} from "./modules/first-page/heroSwiper.js"
