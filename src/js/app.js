@@ -8,10 +8,13 @@ import {
 
 import {
     dropDown
-} from "./modules/first-page/dropdown.js"
+} from "./modules/first-page/dropdown.js";
 
 
 import {
     header
-} from "./modules/first-page/header.js"
+} from "./modules/first-page/header.js";
 
+import {
+    Swiper
+} from "./modules/first-page/heroSwiper.js:";
