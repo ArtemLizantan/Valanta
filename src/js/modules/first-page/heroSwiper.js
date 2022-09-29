@@ -14,5 +14,6 @@ const swiper = new Swiper('.swiper', {
     delay:4500,
     stopOnLastSlide:false,
   },
-  scrollbar:true
+  scrollbar:true,
+  speed:900,
 });
