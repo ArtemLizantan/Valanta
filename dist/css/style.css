@@ -1,4 +1,4 @@
-@import '../../../node_modules/swiper/swiper-bundle.min.css';
+@import '/node_modules/swiper/swiper-bundle.css';
 .main {
   min-height: calc(100vh - 513px);
   flex: 1 1 auto;
@@ -1059,6 +1059,83 @@ body._lock {
 
 .fly.active::after {
   transform: rotate(180deg);
+}
+
+.hero__content {
+  position: relative;
+}
+.hero__swiper {
+  width: 100%;
+  height: 490px;
+  position: relative;
+}
+.hero__swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero__suggest {
+  position: absolute;
+  margin: 104px 0 341px 199px;
+  top: 0;
+  z-index: 2;
+  color: #fff;
+  cursor: default;
+}
+.hero__price {
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 16px;
+  padding: 7px 23px;
+  font-size: 1.7em;
+  border: 1px solid #fff;
+  max-width: 253px;
+  width: 100%;
+  font-weight: 600;
+  line-height: 133%;
+}
+.hero__title {
+  margin-bottom: 40px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  font-size: 3.2em;
+  text-transform: uppercase;
+  max-width: 725px;
+  width: 100%;
+  line-height: 122%;
+}
+.hero__link {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 2px;
+  padding: 18px 85px 22px;
+}
+.hero__link:hover {
+  background: #DD4053;
+  transition: 0.2s ease-in-out;
+}
+.hero__service {
+  background-color: #F8F8F8;
+}
+
+.swiper-paginaton {
+  position: relative;
+  text-align: left;
+}
+
+.swiper-pagination-bullet {
+  width: 7px;
+  height: 7px;
+  border: 1px solid #FFFFFF;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  text-align: left;
+  position: relative;
+  bottom: 60px;
+  left: 200px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff;
 }
 
 .page {

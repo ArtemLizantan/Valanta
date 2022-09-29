@@ -17,4 +17,4 @@ import {
 
 import {
     Swiper
-} from "./modules/first-page/heroSwiper.js:";
+} from "./modules/first-page/heroSwiper.js";
