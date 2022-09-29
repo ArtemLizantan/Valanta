@@ -1,5 +1,7 @@
 .menu {
-
+    @media (min-width: 1200px){
+        height: 70px; 
+    }
     &__body {
 
         // Mobile
@@ -41,6 +43,7 @@
         justify-content: space-between;
         position: relative;
         z-index: 100;
+        height: 70px;
 
         @media (max-width: 1200px) {
             display: block;
@@ -143,7 +146,7 @@
             min-width: 225px;
             height: auto;
             position: absolute;
-            top: 30px;
+            top: 50px;
             opacity: 0;
             visibility: hidden;
             transform: translate(0px, 30%);

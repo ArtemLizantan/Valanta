@@ -1,13 +1,16 @@
 .main {
 	min-height: calc(100vh - 513px);
 	flex: 1 1 auto;
-	margin-top: 120px;
+	margin-top: 170px;
 
 	@media(max-width:768px) {
 		margin-top: 60px;
 	}
 }
 
+section {
+	margin-bottom: 100px;
+}
 
 
 
