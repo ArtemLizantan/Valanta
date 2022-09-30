@@ -16,5 +16,5 @@ import {
 } from "./modules/first-page/header.js"
 
 import {
-    hotelSwiper
+    bestHotelSwiper
 } from "./modules/first-page/heroSwiper.js"
