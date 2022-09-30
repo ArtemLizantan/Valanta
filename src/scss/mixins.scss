@@ -76,30 +76,50 @@
 	background-color: #FF6464;
 	transition: all 0.5s ease;
 	color: #fff !important;
-
+	transition: background .3s ease;
 	a {
-		
+
 		text-align: center;
 	}
 
-	&:hover {
-		background-color: black;
+	@media (min-width: 1200px) {
+		&:hover {
+			background-color: black;
+		}
 	}
 }
 
 %title {
 	font-weight: 500;
-	font-size: 40px;
+	font-size: 45px;
 	line-height: 55px;
 	color: #232323;
 }
 
+%title-button {
+	padding: 14px 32px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 17px;
+	color: #969696;
+	border: 1px solid #969696 ;
+	transition: background .3s ease;
+	a {
 
-%subtitle{
+		text-align: center;
+	}
+
+	@media (min-width: 1200px) {
+		&:hover {
+			background-color: black;
+			color: white;
+		}
+	}
+}
+
+%subtitle {
 	font-weight: 500;
 	font-size: 18px;
 	line-height: 30px;
 	color: #232323;
 }
-
-
