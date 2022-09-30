@@ -1,10 +1,11 @@
 
 import Swiper, {
     Navigation,
-    Pagination
+    Pagination,
+    Autoplay
 } from 'swiper';
 
-Swiper.use([Navigation, Pagination]);
+Swiper.use([Navigation, Pagination, Autoplay]);
 
 function bestHotelsSwiper() {}
 const swiper = new Swiper(".mySwiper", {
@@ -15,7 +16,7 @@ const swiper = new Swiper(".mySwiper", {
         prevEl: ".swiper-button-prev",
     },
     autoplay: {
-        delay: 5000,
+        delay: 1000,
     },
 
 });
