@@ -61,68 +61,77 @@
         }
         
     }
-//  <!--ТУРОПЕРАТОР ВЫСОКОГО УРОВНЯ ОБСЛУЖИВАНИЯ. -->
+//  <!--ТУРОПЕРАТОР ВЫСОКОГО УРОВНЯ ОБСЛУЖИВАНИЯ-------------------------------->
 
     &__service{
         background-color: #F8F8F8;
         padding: 30px 0 45px 0;
     }
+
     &__columns {
         display: flex;
         gap: 85px;
     }
-    &__first-column{}
-    &__first-column-title{
-        margin-bottom: 15px;
-        font-weight: 600;
-        font-size: 2.1em;
-        line-height: 120%;
-        color: #1D1D1D;
-    }
-    &__first-column-subtitle{
-        margin-bottom: 20px;
-        font-family: 'Open Sans';
-        font-weight: 600;
-        font-size: 1.2em;
-        line-height: 156%;
-        color: #777777;
-    }
-    &__first-column-buttons{
-        display: flex;
-        gap: 30px;
-    }
-    &__first-column-button{
-        padding: 15px 44px;
-        text-align: center;
-        background: #BDBDBD;
-        border-radius: 2px;
-        font-weight: 700;
-        font-size: 16px;   
-        color: #fff;
-        &:hover {
-            background: #DD4053;
-            transition: 0.5s ease;
+
+    // <!--ПЕРВАЯ КОЛОНКА-------------------------------------------->
+
+    &__first-column{
+
+        &-title {
+            margin-bottom: 15px;
+            font-weight: 600;
+            font-size: 2.1em;
+            line-height: 120%;
+            color: #1D1D1D;
         }
-    }
-    &__first-column-button:nth-child(2){
-        border-radius: 0px;
-        border: 1px solid #969696;
-        background: rgba(0, 0, 0, 0);
-        color: #969696;
-        font-weight: 700;
-        font-size: 1.1em;
-        line-height: 20px;
-        &:hover {
-            background: #DD4053;
-            transition: 0.5s ease;
+        &-subtitle {
+            margin-bottom: 20px;
+            font-family: 'Open Sans';
+            font-weight: 600;
+            font-size: 1.2em;
+            line-height: 156%;
+            color: #777777;
+        }
+        &-buttons {
+            display: flex;
+            gap: 30px;
+        }
+        &-button{
+            padding: 15px 44px;
+            text-align: center;
+            background: #BDBDBD;
+            border-radius: 2px;
+            font-weight: 700;
+            font-size: 16px;   
             color: #fff;
-            border: none;
+            &:hover {
+                background: #DD4053;
+                transition: 0.5s ease;
+            }
+            &:nth-child(2){
+                border-radius: 0px;
+                border: 1px solid #969696;
+                background: rgba(0, 0, 0, 0);
+                color: #969696;
+                font-weight: 700;
+                font-size: 1.1em;
+                line-height: 20px;
+                &:hover {
+                    background: #DD4053;
+                    transition: 0.5s ease;
+                    color: #fff;
+                    border: none;
+                }
+            }
         }
+
+
     }
-    
-    &__second-column{}
-    &__second-column-list{
-        display: flex;
+   
+    // <!--ВТОРАЯ КОЛОНКА-------------------------------------------->
+    &__second-column{
+        &-list {
+            display: flex;
         flex-direction: column;
         gap: 10px;
         &:before:nth-of-type(2){
@@ -131,26 +140,27 @@
         &:before:nth-of-type(3){
             content: url(../../img/hero/hero3.svg);
         }
-    }
-    &__second-column-point{
-        font-family: 'Open Sans';
-        font-weight: 600;
-        font-size: 1.2em;
-        line-height: 367%;
-        white-space: nowrap;
-        &:before{
-            content: url(../../img/hero/hero1.svg);
-            position: relative;
-            margin-right: 21px;
-            border: 1.3px dashed #969696;
-            padding: 13px;
-            border-radius: 50%;
         }
-        &:before:nth-child(2){
-            content: url(../../img/hero/hero2.svg);
-        }
-        &:before:nth-child(3){
-            content: url(../../img/hero/hero3.svg);
+        &-point {
+            font-family: 'Open Sans';
+            font-weight: 600;
+            font-size: 1.2em;
+            line-height: 367%;
+            white-space: nowrap;
+            &:before{
+                content: url(../../img/hero/hero1.svg);
+                position: relative;
+                margin-right: 21px;
+                border: 1.3px dashed #969696;
+                padding: 13px;
+                border-radius: 50%;
+            }
+            &:before:nth-child(2){
+                content: url(../../img/hero/hero2.svg);
+            }
+            &:before:nth-child(3){
+                content: url(../../img/hero/hero3.svg);
+            }
         }
     }
 }
