@@ -1,9 +1,13 @@
 
 @import "../../node_modules/swiper/swiper-bundle.min.css";
 
-.swiper {
+.artemSwiper{
     width: 100%;
     height: auto;
+}
+
+.swiper {
+
 
     @media (max-width: 1112px) {
         height: max-content;
