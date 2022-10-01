@@ -12,7 +12,7 @@ function heroSwiper() {
         // Optional parameters
         loop: true,
 
-        // If we need pagination
+        // If we need paginatio
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
