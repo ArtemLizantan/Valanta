@@ -539,7 +539,7 @@ body._lock {
     text-align: center;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 425px) {
   .send__title {
     font-size: 36px;
   }
@@ -1097,6 +1097,7 @@ body._lock {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  background: linear-gradient(180deg, rgba(20, 20, 30, 0.1) 29.48%, #14141E 100%);
 }
 .hero__suggest {
   position: absolute;
@@ -1117,15 +1118,25 @@ body._lock {
   font-weight: 600;
   line-height: 133%;
 }
+@media (max-width: 425px) {
+  .hero__price {
+    max-width: 210px;
+    font-size: 1.2em;
+  }
+}
 .hero__title {
   margin-bottom: 40px;
   font-weight: 500;
-  font-family: "Montserrat";
   font-size: 3.2em;
   text-transform: uppercase;
   max-width: 725px;
   width: 100%;
   line-height: 122%;
+}
+@media (max-width: 525px) {
+  .hero__title {
+    font-size: 2em;
+  }
 }
 .hero__link {
   background: rgba(255, 255, 255, 0.25);
@@ -1136,6 +1147,11 @@ body._lock {
   background: #DD4053;
   transition: 0.2s ease-in-out;
 }
+@media (max-width: 525px) {
+  .hero__link:hover {
+    background: rgba(255, 255, 255, 0.25);
+  }
+}
 .hero__service {
   background-color: #F8F8F8;
   padding: 30px 0 45px 0;
@@ -1143,6 +1159,12 @@ body._lock {
 .hero__columns {
   display: flex;
   gap: 85px;
+  align-items: flex-start;
+}
+@media (max-width: 991.98px) {
+  .hero__columns {
+    flex-direction: column;
+  }
 }
 .hero__first-column-title {
   margin-bottom: 15px;
@@ -1150,6 +1172,11 @@ body._lock {
   font-size: 2.1em;
   line-height: 120%;
   color: #1D1D1D;
+}
+@media (max-width: 479.98px) {
+  .hero__first-column-title {
+    font-size: 1.7em;
+  }
 }
 .hero__first-column-subtitle {
   margin-bottom: 20px;
@@ -1162,6 +1189,11 @@ body._lock {
 .hero__first-column-buttons {
   display: flex;
   gap: 30px;
+}
+@media (max-width: 767.98px) {
+  .hero__first-column-buttons {
+    flex-direction: column;
+  }
 }
 .hero__first-column-button {
   padding: 15px 44px;
@@ -1209,6 +1241,11 @@ body._lock {
   line-height: 367%;
   white-space: nowrap;
 }
+@media (max-width: 479.98px) {
+  .hero__second-column-point {
+    font-size: 1em;
+  }
+}
 .hero__second-column-point:before {
   content: url(../../img/hero/hero1.svg);
   position: relative;
@@ -1246,28 +1283,27 @@ body._lock {
   background-color: #fff;
 }
 
-.swiper {
+.best-hotels-swiper {
   width: 100%;
-  height: 450px;
+  height: auto;
 }
 @media (max-width: 1112px) {
-  .swiper {
+  .best-hotels-swiper {
     height: max-content;
     width: 100%;
   }
 }
-.swiper__img {
+.best-hotels-swiper__img {
   position: relative;
   max-width: 100%;
   transition: transform 0.3s;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.6) 100%);
 }
 @media (max-width: 1112px) {
-  .swiper__img {
+  .best-hotels-swiper__img {
     width: 100%;
   }
 }
-.swiper__content {
+.best-hotels-swiper__content {
   position: fixed;
   top: 0;
   left: 0;
@@ -1276,17 +1312,15 @@ body._lock {
   transition: all 0.3s;
 }
 @media (min-width: 1200px) {
-  .swiper__content:hover {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
+  .best-hotels-swiper__content:hover {
     background-color: rgb(221, 64, 83);
   }
 }
 
-.best-hotels__container {
-  max-width: 1440px;
+@media (max-width: 1112px) {
+  .best-hotels__container {
+    max-width: 1440px;
+  }
 }
 @media (max-width: 1112px) {
   .best-hotels__container {

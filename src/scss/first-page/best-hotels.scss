@@ -1,9 +1,8 @@
-
 @import "../../node_modules/swiper/swiper-bundle.min.css";
 
-.swiper {
+.best-hotels-swiper {
     width: 100%;
-    height: 450px;
+    height: auto;
 
     @media (max-width: 1112px) {
         height: max-content;
@@ -14,13 +13,11 @@
         position: relative;
         max-width: 100%;
         transition: transform 0.3s;
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.6) 100%);
 
         @media (max-width: 1112px) {
             width: 100%;
         }
     }
-
 
     &__content {
         position: fixed;
@@ -32,10 +29,6 @@
 
         @media (min-width: 1200px) {
             &:hover {
-                position: fixed;
-                top: 0;
-                left: 0;
-                z-index: 10;
                 background-color: rgba(221, 64, 83, 1);
             }
         }
@@ -44,9 +37,12 @@
 
 
 
+
 .best-hotels {
     &__container {
-        max-width: 1440px;
+        @media (max-width: 1112px) {
+            max-width: 1440px;
+        }
 
         @media (max-width: 1112px) {
             max-width: none;
