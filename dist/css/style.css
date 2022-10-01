@@ -539,7 +539,7 @@ body._lock {
     text-align: center;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 425px) {
   .send__title {
     font-size: 36px;
   }
@@ -1097,6 +1097,7 @@ body._lock {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  background: linear-gradient(180deg, rgba(20, 20, 30, 0.1) 29.48%, #14141E 100%);
 }
 .hero__suggest {
   position: absolute;
@@ -1117,15 +1118,25 @@ body._lock {
   font-weight: 600;
   line-height: 133%;
 }
+@media (max-width: 425px) {
+  .hero__price {
+    max-width: 210px;
+    font-size: 1.2em;
+  }
+}
 .hero__title {
   margin-bottom: 40px;
   font-weight: 500;
-  font-family: "Montserrat";
   font-size: 3.2em;
   text-transform: uppercase;
   max-width: 725px;
   width: 100%;
   line-height: 122%;
+}
+@media (max-width: 525px) {
+  .hero__title {
+    font-size: 2em;
+  }
 }
 .hero__link {
   background: rgba(255, 255, 255, 0.25);
@@ -1136,6 +1147,11 @@ body._lock {
   background: #DD4053;
   transition: 0.2s ease-in-out;
 }
+@media (max-width: 525px) {
+  .hero__link:hover {
+    background: rgba(255, 255, 255, 0.25);
+  }
+}
 .hero__service {
   background-color: #F8F8F8;
   padding: 30px 0 45px 0;
@@ -1143,6 +1159,12 @@ body._lock {
 .hero__columns {
   display: flex;
   gap: 85px;
+  align-items: flex-start;
+}
+@media (max-width: 991.98px) {
+  .hero__columns {
+    flex-direction: column;
+  }
 }
 .hero__first-column-title {
   margin-bottom: 15px;
@@ -1150,6 +1172,11 @@ body._lock {
   font-size: 2.1em;
   line-height: 120%;
   color: #1D1D1D;
+}
+@media (max-width: 479.98px) {
+  .hero__first-column-title {
+    font-size: 1.7em;
+  }
 }
 .hero__first-column-subtitle {
   margin-bottom: 20px;
@@ -1162,6 +1189,11 @@ body._lock {
 .hero__first-column-buttons {
   display: flex;
   gap: 30px;
+}
+@media (max-width: 767.98px) {
+  .hero__first-column-buttons {
+    flex-direction: column;
+  }
 }
 .hero__first-column-button {
   padding: 15px 44px;
@@ -1209,6 +1241,11 @@ body._lock {
   line-height: 367%;
   white-space: nowrap;
 }
+@media (max-width: 479.98px) {
+  .hero__second-column-point {
+    font-size: 1em;
+  }
+}
 .hero__second-column-point:before {
   content: url(../../img/hero/hero1.svg);
   position: relative;
@@ -1235,7 +1272,10 @@ body._lock {
   border: 1px solid #FFFFFF;
 }
 
-.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
   text-align: left;
   position: relative;
   bottom: 60px;
@@ -1250,22 +1290,23 @@ body._lock {
   width: 100%;
   height: auto;
 }
-
-@media (max-width: 1112px) {
-  .swiper {
-    height: max-content;
-    width: 100%;
-  }
-}
-.swiper__img {
+.best-hotels-swiper__img {
   position: relative;
   max-width: 100%;
   transition: transform 0.3s;
   height: 450px;
   width: 460px;
 }
-@media (max-width: 1112px) {
-  .swiper__img {
+@media (max-width: 1200px) {
+  .best-hotels-swiper__img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .swiper {
+    height: max-content;
     width: 100%;
   }
 }
@@ -1283,14 +1324,9 @@ body._lock {
   }
 }
 
-@media (min-width: 1112px) {
+@media (min-width: 1200px) {
   .best-hotels__container {
     max-width: 1440px;
-  }
-}
-@media (max-width: 1112px) {
-  .best-hotels__container {
-    max-width: none;
   }
 }
 
@@ -1302,19 +1338,19 @@ body._lock {
   align-items: center;
   justify-content: space-between;
 }
-@media (max-width: 1112px) {
+@media (max-width: 1200px) {
   .title__body {
     flex-direction: column;
     gap: 20px;
   }
 }
-@media (max-width: 1112px) {
+@media (max-width: 1200px) {
   .title__main {
     font-size: 38px;
     line-height: 10px;
   }
 }
-@media (max-width: 1112px) {
+@media (max-width: 1200px) {
   .title__button {
     width: 100%;
     text-align: center;
@@ -1324,7 +1360,7 @@ body._lock {
   border: 1px solid #C4C4C4;
   width: 237px;
 }
-@media (max-width: 1112px) {
+@media (max-width: 1200px) {
   .title__border {
     width: 100%;
   }
@@ -1375,7 +1411,7 @@ body._lock {
   position: relative;
   z-index: 2;
 }
-@media (max-width: 1112px) {
+@media (max-width: 1200px) {
   .swiper-button-next,
 .swiper-button-prev {
     display: none;
@@ -1401,7 +1437,7 @@ body._lock {
   top: 42%;
   right: 25%;
 }
-@media (max-width: 1112px) {
+@media (max-width: 1200px) {
   .swiper-button-next {
     right: 0;
     left: auto;
@@ -1412,7 +1448,7 @@ body._lock {
   left: 0;
   right: 0;
 }
-@media (max-width: 1112px) {
+@media (max-width: 1200px) {
   .swiper-button-prev {
     left: 0;
   }
