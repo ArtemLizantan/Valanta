@@ -21,11 +21,12 @@
 
     &__suggest{
         position: absolute;
-        margin: 104px 0 341px 199px;
+        margin-top: 104px;
         top: 0;
         z-index: 2;
         color: #fff;
         cursor: default;
+        
     }
 
     &__price{
