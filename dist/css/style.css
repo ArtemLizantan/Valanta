@@ -1297,6 +1297,8 @@ body._lock {
   position: relative;
   max-width: 100%;
   transition: transform 0.3s;
+  height: 450px;
+  width: 460px;
 }
 @media (max-width: 1112px) {
   .best-hotels-swiper__img {
@@ -1317,7 +1319,7 @@ body._lock {
   }
 }
 
-@media (max-width: 1112px) {
+@media (min-width: 1112px) {
   .best-hotels__container {
     max-width: 1440px;
   }

@@ -31,7 +31,7 @@ function heroSwiper(){
 heroSwiper();
 
 function bestHotelsSwiper() {}
-const swiper = new Swiper(".mySwiper", {
+const hotelSwiper = new Swiper(".best-hotels-swiper", {
     slidesPerView: 3,
     spaceBetween: 30,
     navigation: {
@@ -39,7 +39,7 @@ const swiper = new Swiper(".mySwiper", {
         prevEl: ".swiper-button-prev",
     },
     autoplay: {
-        delay: 1000,
+        delay: 3000,
     },
     breakpoints: {
         310: {
