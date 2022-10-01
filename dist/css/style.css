@@ -1093,7 +1093,7 @@ body._lock {
   height: 490px;
   position: relative;
 }
-.hero__swiper-slide img {
+.hero__swiper-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
