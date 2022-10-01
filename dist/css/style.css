@@ -1,5 +1,4 @@
 @import '/node_modules/swiper/swiper-bundle.css';
-@import "../../node_modules/swiper/swiper-bundle.css";
 @import "../../node_modules/swiper/swiper-bundle.min.css";
 .main {
   min-height: calc(100vh - 513px);
@@ -1251,18 +1250,29 @@ body._lock {
   width: 100%;
   height: 450px;
 }
+@media (max-width: 1112px) {
+  .swiper {
+    height: max-content;
+    width: 100%;
+  }
+}
 .swiper__img {
   position: relative;
   max-width: 100%;
   transition: transform 0.3s;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.6) 100%);
 }
+@media (max-width: 1112px) {
+  .swiper__img {
+    width: 100%;
+  }
+}
 .swiper__content {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 460px;
-  height: 450px;
+  width: 100%;
+  height: 100%;
   transition: all 0.3s;
 }
 @media (min-width: 1200px) {
@@ -1270,12 +1280,18 @@ body._lock {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 10;
     background-color: rgb(221, 64, 83);
   }
 }
 
 .best-hotels__container {
   max-width: 1440px;
+}
+@media (max-width: 1112px) {
+  .best-hotels__container {
+    max-width: none;
+  }
 }
 
 .title {
@@ -1286,10 +1302,32 @@ body._lock {
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 1112px) {
+  .title__body {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media (max-width: 1112px) {
+  .title__main {
+    font-size: 38px;
+    line-height: 10px;
+  }
+}
+@media (max-width: 1112px) {
+  .title__button {
+    width: 100%;
+    text-align: center;
+  }
+}
 .title__border {
   border: 1px solid #C4C4C4;
   width: 237px;
-  height: 1px;
+}
+@media (max-width: 1112px) {
+  .title__border {
+    width: 100%;
+  }
 }
 .title__swiper-button {
   display: flex;
@@ -1335,6 +1373,13 @@ body._lock {
   border-radius: 50%;
   margin-top: 0;
   position: relative;
+  z-index: 2;
+}
+@media (max-width: 1112px) {
+  .swiper-button-next,
+.swiper-button-prev {
+    display: none;
+  }
 }
 @media (min-width: 1200px) {
   .swiper-button-next:hover,
@@ -1356,10 +1401,21 @@ body._lock {
   top: 42%;
   right: 25%;
 }
+@media (max-width: 1112px) {
+  .swiper-button-next {
+    right: 0;
+    left: auto;
+  }
+}
 
 .swiper-button-prev {
   left: 0;
   right: 0;
+}
+@media (max-width: 1112px) {
+  .swiper-button-prev {
+    left: 0;
+  }
 }
 .swiper-button-prev::after {
   content: "";

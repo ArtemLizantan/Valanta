@@ -41,7 +41,23 @@ const swiper = new Swiper(".mySwiper", {
     autoplay: {
         delay: 1000,
     },
-
+    breakpoints: {
+        310: {
+            slidesPerView: 1,
+        },
+        640: {
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 3,
+        },
+        1240: {
+            slidesPerView: 3,
+        },
+        1650: {
+            slidesPerView: 4,
+        },
+    },
 });
 
 bestHotelsSwiper();
