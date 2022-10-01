@@ -39,23 +39,24 @@ const swiper = new Swiper(".mySwiper", {
         prevEl: ".swiper-button-prev",
     },
     autoplay: {
-        delay: 1000,
+        delay: 3000,
     },
     breakpoints: {
         310: {
             slidesPerView: 1,
         },
-        640: {
+        
+        700: {
             slidesPerView: 2,
         },
         768: {
-            slidesPerView: 3,
+            slidesPerView: 2,
         },
         1240: {
             slidesPerView: 3,
         },
         1650: {
-            slidesPerView: 4,
+            slidesPerView: 3,
         },
     },
 });

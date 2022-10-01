@@ -1246,7 +1246,7 @@ body._lock {
   background-color: #fff;
 }
 
-.artemSwiper {
+.best-hotels-swiper {
   width: 100%;
   height: auto;
 }
@@ -1261,7 +1261,8 @@ body._lock {
   position: relative;
   max-width: 100%;
   transition: transform 0.3s;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.6) 100%);
+  height: 450px;
+  width: 460px;
 }
 @media (max-width: 1112px) {
   .swiper__img {
@@ -1278,16 +1279,14 @@ body._lock {
 }
 @media (min-width: 1200px) {
   .swiper__content:hover {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
     background-color: rgb(221, 64, 83);
   }
 }
 
-.best-hotels__container {
-  max-width: 1440px;
+@media (min-width: 1112px) {
+  .best-hotels__container {
+    max-width: 1440px;
+  }
 }
 @media (max-width: 1112px) {
   .best-hotels__container {
