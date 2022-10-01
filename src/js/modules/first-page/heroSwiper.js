@@ -7,7 +7,7 @@ import Swiper, {
 Swiper.use([Navigation, Pagination, Autoplay]);
 
 function bestHotelsSwiper() {}
-const swiper = new Swiper(".mySwiper", {
+const hotelSwiper = new Swiper(".best-hotels-swiper", {
     slidesPerView: 3,
     spaceBetween: 30,
     navigation: {
