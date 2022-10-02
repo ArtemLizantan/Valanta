@@ -1,3 +1,4 @@
+@import '/node_modules/swiper/swiper-bundle.css';
 @import "../../node_modules/swiper/swiper-bundle.min.css";
 .main {
   min-height: calc(100vh - 513px);
@@ -1084,11 +1085,11 @@ body._lock {
   transform: rotate(180deg);
 }
 
-.best-hotels-swiper {
+.hero__content {
+  position: relative;
+}
+.hero__swiper {
   width: 100%;
-<<<<<<< HEAD
-  height: auto;
-=======
   height: 490px;
   position: relative;
 }
@@ -1245,10 +1246,9 @@ body._lock {
   background-color: #fff;
 }
 
-.swiper {
+.best-hotels-swiper {
   width: 100%;
-  height: 450px;
->>>>>>> 2330e86 (denis fix)
+  height: auto;
 }
 @media (max-width: 1112px) {
   .best-hotels-swiper {
