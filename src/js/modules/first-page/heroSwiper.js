@@ -63,17 +63,3 @@ const hotelSwiper = new Swiper(".best-hotels-swiper", {
 bestHotelsSwiper();
 
 
-function newsSwiper(){
-    const newsSwiper = new Swiper('.news__swiper', {
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-      speed:2000,
-      slidesPerView:4,
-      spaceBetween:30,
-      slidesPerGroup:1,
-    });
-  }
-  
-newsSwiper();

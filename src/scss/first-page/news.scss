@@ -3,19 +3,68 @@
 .news {
     padding: 94px 0 81px 0;
     background: #F8F8F8;
+    &__container{
 
-    &__swiper-slide{
-
-        &-card {
-            &__img{}
-
-            &__date{
-                color: red;
+        position: relative;
+    }
+    &__swiper {}
+    &__slide{
+        padding-right: 14px;
+        border-right: 1px solid #EEEE;
+    }
+    &__card{
+        position: relative;
+        font-weight: 500;
+        cursor: pointer;
+        &:hover {
+            .news__link{
+                color: #DD4053;
+                border-bottom: 1px solid #DD4053;
+                 padding-bottom: 2px;
+                 transition: 0.3s ease-in-out;
             }
-
-            &__title{}
-
-            &__link{}
         }
+    }
+    &__img{
+        margin-bottom: 15px;
+    }
+    &__date{
+        &:before {
+            content: url(../../img/news/swiper/news-dateIcon.svg);
+            margin-right: 9px;
+        }   
+        margin-bottom: 6px;
+        line-height: 177%;
+        text-transform: uppercase;
+        color: #BBBBBB;
+
+    }
+    &__title{
+        font-size: 1.4em;
+        color: #323232;
+        line-height: 122%;
+        margin-bottom: 9px;
+
+    }
+    &__link{    
+        letter-spacing: 0.5px;
+        line-height: 171%;
+        font-family: 'Open Sans';
+        font-weight: 400;
+        border-bottom: 1px solid #2C2C2C;
+    }
+    &__button-next, &__button-prev{
+        @media (max-width:1200px) {
+            display: none;
+        }
+        position: absolute;
+        top: 45%;
+    }
+    &__button-next{
+        margin-right: -70px;
+        left: unset;
+    }
+    &__button-prev{
+        margin-left: -70px;
     }
 }
