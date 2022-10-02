@@ -1,10 +1,32 @@
+Swiper.use([Navigation, Pagination, Autoplay]);
+
 import Swiper, {
     Navigation,
     Pagination,
     Autoplay
 } from 'swiper';
 
-Swiper.use([Navigation, Pagination, Autoplay]);
+
+function heroSwiper() {
+    const swiper = new Swiper('.hero__swiper', {
+        // Optional parameters
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        autoplay: {
+            delay: 4500,
+            stopOnLastSlide: false,
+        },
+        scrollbar: true,
+        speed: 900,
+    });
+}
+
+heroSwiper();
 
 function bestHotelsSwiper() {}
 const hotelSwiper = new Swiper(".best-hotels-swiper", {
@@ -21,7 +43,7 @@ const hotelSwiper = new Swiper(".best-hotels-swiper", {
         310: {
             slidesPerView: 1,
         },
-        
+
         700: {
             slidesPerView: 2,
         },
