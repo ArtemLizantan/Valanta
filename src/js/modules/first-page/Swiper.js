@@ -127,6 +127,9 @@ function newsSwiper(){
     autoplay: {
         delay: 4500,
     },
+    scrollbar: {
+        el: ".news-scroll",
+    },
       speed:900,
       slidesPerView:4,
       spaceBetween:30,
@@ -135,12 +138,11 @@ function newsSwiper(){
         310: {
             slidesPerView: 1,
         },
-
-        700: {
+        525: {
             slidesPerView: 2,
         },
         768: {
-            slidesPerView: 2,
+            slidesPerView: 3,
         },
         1200: {
             slidesPerView: 4,
