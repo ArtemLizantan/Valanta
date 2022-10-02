@@ -1,5 +1,6 @@
 @import '/node_modules/swiper/swiper-bundle.css';
 @import "../../node_modules/swiper/swiper-bundle.min.css";
+@import "../../node_modules/swiper/swiper-bundle.min.css";
 .main {
   min-height: calc(100vh - 513px);
   flex: 1 1 auto;
@@ -1476,6 +1477,13 @@ body._lock {
   pointer-events: none;
 }
 
+.news {
+  padding: 94px 0 81px 0;
+  background: #F8F8F8;
+}
+.news__swiper-slide-card__date {
+  color: red;
+}
 .page {
   flex: 1 1 auto;
 }

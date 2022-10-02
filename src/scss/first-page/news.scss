@@ -1,0 +1,21 @@
+@import "../../node_modules/swiper/swiper-bundle.min.css";
+
+.news {
+    padding: 94px 0 81px 0;
+    background: #F8F8F8;
+
+    &__swiper-slide{
+
+        &-card {
+            &__img{}
+
+            &__date{
+                color: red;
+            }
+
+            &__title{}
+
+            &__link{}
+        }
+    }
+}
