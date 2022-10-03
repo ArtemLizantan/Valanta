@@ -67,14 +67,15 @@
         background: rgba(255, 255, 255, 0.25);
         border-radius: 2px;
         padding: 18px 85px 22px;
+        transition: 0.5s ease;
 
         &:hover {
-            @media (max-width: 525px) {
+            @media (max-width: 768px) {
                 background: rgba(255, 255, 255, 0.25);
+                transition: 0.5s ease;
             }
 
             background: #DD4053;
-            transition: 0.2s ease-in-out;
         }
 
 
@@ -84,17 +85,17 @@
 
     &__service {
         background-color: #F8F8F8;
-        padding: 30px 0 45px 0;
+        padding: 30px 0 35px 0;
     }
 
     &__columns {
-        @media (max-width:$md2 + px) {
+        @media (max-width:$md2+px) {
             flex-direction: column;
         }
 
         display: flex;
         gap: 85px;
-        align-items: flex-start;
+        align-items: center;
     }
 
     // <!--ПЕРВАЯ КОЛОНКА-------------------------------------------->
@@ -102,7 +103,7 @@
     &__first-column {
 
         &-title {
-            @media (max-width:$md4 + px) {
+            @media (max-width:$md4+px) {
                 font-size: 1.7em;
             }
 
@@ -123,7 +124,7 @@
         }
 
         &-buttons {
-            @media (max-width:$md3 + px) {
+            @media (max-width:$md3+px) {
                 flex-direction: column;
             }
 
@@ -140,9 +141,11 @@
             font-size: 16px;
             color: #fff;
 
-            &:hover {
-                background: #DD4053;
-                transition: 0.5s ease;
+            @media(min-width:1200px) {
+                &:hover {
+                    background: #DD4053;
+                    transition: 0.5s ease;
+                }
             }
 
             &:nth-child(2) {
@@ -154,12 +157,15 @@
                 font-size: 1.1em;
                 line-height: 20px;
 
-                &:hover {
-                    background: #DD4053;
-                    transition: 0.5s ease;
-                    color: #fff;
-                    border: none;
+                @media(min-width:1200px) {
+                    &:hover {
+                        background: #DD4053;
+                        transition: 0.5s ease;
+                        color: #fff;
+                        border: none;
+                    }
                 }
+
             }
         }
 
@@ -183,7 +189,7 @@
         }
 
         &-point {
-            @media (max-width:$md4 + px) {
+            @media (max-width:$md4+px) {
                 font-size: 1em;
             }
 
@@ -238,7 +244,6 @@
     text-align: left;
     position: relative;
     bottom: 60px;
-    left: 200px;
 }
 
 

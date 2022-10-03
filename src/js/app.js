@@ -17,10 +17,16 @@ import {
 
 import {
     heroSwiper
-} from "./modules/first-page/heroSwiper.js";
-   
+} from "./modules/first-page/Swiper.js";
+
 import {
     bestHotelSwiper
-} from "./modules/first-page/heroSwiper.js"
+} from "./modules/first-page/Swiper.js"
 
+import {
+    actualSwiper
+} from "./modules/first-page/Swiper.js"
 
+import {
+    actual
+} from "./modules/first-page/actual.js"

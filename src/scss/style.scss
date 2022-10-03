@@ -3,8 +3,8 @@
 	flex: 1 1 auto;
 	margin-top: 170px;
 
-	@media(max-width:768px) {
-		margin-top: 60px;
+	@media(max-width:1200px) {
+		margin-top: 80px;
 	}
 }
 
@@ -118,7 +118,7 @@ body {
 @import "first-page/second-header";
 @import "first-page/hero";
 @import "first-page/best-hotels";
-
+@import "first-page/actual";
 
 
 
@@ -129,10 +129,6 @@ body {
 .page {
 	// padding: 90px 0px 0px 0px;
 	flex: 1 1 auto;
-
-	@media (max-width: $md3+px) {
-		padding: 30px 0px 0px 0px;
-	}
 }
 
 //===================================================================================================================================
@@ -143,4 +139,35 @@ body {
 
 .footer {
 	margin-top: 513px;
+}
+
+
+
+.swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
+	bottom: -25px;
+	visibility: hidden;
+	opacity: 0;
+	@media (max-width: 1112px) {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+.swiper-scrollbar-drag {
+	background-color: red;
+}
+
+.actual-button-prev,
+.actual-button-next {
+	position: absolute;
+	top: 45%;
+}
+
+.actual-button-prev {
+	left: -70px;
+}
+
+.actual-button-next {
+	right: -70px;
+	left: unset;
 }
