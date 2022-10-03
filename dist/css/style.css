@@ -1,6 +1,7 @@
 @import '/node_modules/swiper/swiper-bundle.css';
 @import "../../node_modules/swiper/swiper-bundle.min.css";
 @import "../../node_modules/swiper/swiper-bundle.min.css";
+@import "../../node_modules/swiper/swiper-bundle.min.css";
 .main {
   min-height: calc(100vh - 513px);
   flex: 1 1 auto;
@@ -98,7 +99,8 @@ section {
 }
 .title__border {
   border: 1px solid #C4C4C4;
-  width: 237px;
+  max-width: 750px;
+  width: 100%;
 }
 @media (max-width: 1112px) {
   .title__border {
@@ -1642,6 +1644,82 @@ body._lock {
 }
 .actual__content:hover {
   background-color: unset;
+}
+
+.blog__container {
+  margin-left: 203px;
+}
+@media (max-width: 1113px) {
+  .blog__container {
+    margin-left: unset;
+  }
+}
+.blog__border {
+  width: 680px;
+}
+.blog__slide {
+  width: 300px;
+}
+.blog__card {
+  cursor: pointer;
+  padding: 15px 15px 26px 15px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.07);
+}
+.blog__card:hover .blog__link {
+  color: #DD4053;
+}
+.blog__card:hover .blog__link::after {
+  content: url(../../img/blog/card/arrow-red.svg);
+  margin-left: 45px;
+  transition: all 0.2s ease-out;
+}
+.blog__img {
+  width: 100%;
+  height: 140px;
+  margin-bottom: 15px;
+}
+.blog__statistics {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  font-weight: 500;
+  line-height: 175%;
+  color: #BBBBBB;
+}
+.blog__statistic1:before {
+  content: url(../../img/blog/card/date.svg);
+  margin-right: 9px;
+}
+.blog__statistic2:before {
+  content: url(../../img/blog/card/eye.svg);
+  margin-right: 15px;
+}
+.blog__title {
+  font-weight: 500;
+  font-size: 1.4em;
+  line-height: 122%;
+  color: #323232;
+  margin-bottom: 20px;
+}
+.blog__link {
+  letter-spacing: 0.5px;
+  line-height: 171%;
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+.blog__link::after {
+  content: url(../../img/blog/card/arrow.svg);
+  margin-left: 25px;
+}
+.blog__button-prev, .blog__button-next {
+  top: 210px;
+  left: 117px;
+}
+.blog__button-prev {
+  margin-bottom: 30px;
+}
+.blog__name {
+  margin-bottom: 69px;
 }
 
 .page {

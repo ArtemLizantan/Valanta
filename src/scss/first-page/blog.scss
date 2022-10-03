@@ -1,0 +1,91 @@
+@import "../../node_modules/swiper/swiper-bundle.min.css";
+
+.blog {
+
+    &__container {
+        margin-left: 203px;
+        @media (max-width:1113px) {
+            margin-left: unset;
+        }
+    }
+    &__border {
+        width: 680px;
+    }
+    
+    &__slide {
+        width: 300px;
+    }
+
+    &__card {
+        &:hover {
+            .blog__link {
+                color: #DD4053;
+            }
+            .blog__link::after {
+                content: url(../../img/blog/card/arrow-red.svg);
+                margin-left: 45px;
+                 transition: all 0.2s ease-out;
+            }
+        }
+        cursor: pointer;
+        padding: 15px 15px 26px 15px;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.07);
+    }
+
+    &__img {
+       width: 100%;
+       height: 140px;
+       margin-bottom: 15px;
+    }
+
+    &__statistics{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 6px;
+        font-weight: 500;
+        line-height: 175%;
+        color: #BBBBBB;
+    }
+    &__statistic1{
+        &:before{
+            content: url(../../img/blog/card/date.svg);
+            margin-right: 9px;
+        }
+    }
+    &__statistic2{
+        &:before{
+            content: url(../../img/blog/card/eye.svg);
+            margin-right: 15px;
+        }
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 1.4em;
+        line-height: 122%;
+        color: #323232;
+        margin-bottom: 20px;
+    }
+    &__link {
+        letter-spacing: 0.5px;
+        line-height: 171%;
+        font-family: 'Open Sans';
+        font-weight: 400;
+        &::after {
+            content: url(../../img/blog/card/arrow.svg);
+            margin-left: 25px;
+        }
+
+    }
+    &__button-prev , &__button-next {
+        top: 210px;
+        left: 117px;
+
+    }
+    &__button-prev {
+        margin-bottom: 30px;
+    }
+    &__name {
+        margin-bottom: 69px;
+    }
+}
