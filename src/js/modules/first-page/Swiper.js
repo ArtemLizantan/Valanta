@@ -114,3 +114,42 @@ function actualSwiper() {
 };
 
 actualSwiper();
+
+
+function newsSwiper() {
+    const newsSwiper = new Swiper(".news__swiper", {
+        modules: [Navigation, Autoplay],
+        loop: true,
+        navigation: {
+            nextEl: ".news__button-next",
+            prevEl: ".news__button-prev",
+        },
+        autoplay: {
+            delay: 4500,
+        },
+        scrollbar: {
+            el: ".news-scroll",
+        },
+        speed: 900,
+        slidesPerView: 4,
+        spaceBetween: 30,
+        slidesPerGroup: 1,
+        breakpoints: {
+            310: {
+                slidesPerView: 1,
+            },
+            525: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 3,
+            },
+            1200: {
+                slidesPerView: 4,
+            }
+
+        }
+    });
+}
+
+newsSwiper();
