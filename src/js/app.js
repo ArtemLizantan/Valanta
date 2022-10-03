@@ -26,3 +26,7 @@ import {
 import {
     actualSwiper
 } from "./modules/first-page/Swiper.js"
+
+import {
+    actual
+} from "./modules/first-page/actual.js"

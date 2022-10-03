@@ -1,6 +1,6 @@
 .actual {
 
-    &__container{
+    &__container {
         position: relative;
     }
 
@@ -106,9 +106,53 @@
         color: #3E3E3E;
     }
 
-    &__content{
+    &__content {
         &:hover {
             background-color: unset;
         }
     }
+}
+
+// Настройка куда что
+
+.search {
+    &__body {
+        margin-top: 66px;
+    }
+
+    &__wrapper {
+        background: #F8F8F8;
+        width: 100%;
+        height: 140px;
+        display: flex;
+        padding: 30px 50px;
+    }
+
+    &__form {
+        display: flex;
+        align-items: center;
+        width: 845px;
+        background: #FFFFFF;
+        border: 1px solid rgba(46, 46, 46, 0.2);
+        border-radius: 2px;
+        height: 50px;
+
+        input {
+            border: 1px solid rgba(46, 46, 46, 0.2);
+            height: 50px;
+            flex-shrink: 100%;
+            text-align: center;
+        }
+    }
+
+    &__box {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+    }
+
+    &__search {
+        width: 100px;
+    }
+
 }
