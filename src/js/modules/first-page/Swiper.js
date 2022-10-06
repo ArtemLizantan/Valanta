@@ -166,7 +166,7 @@ function newsSwiper(){
         delay: 4500,
     },
     scrollbar: {
-        el: ".blog-scrollbar",
+        el: ".blog-scroll",
     },
     breakpoints: {
         310: {

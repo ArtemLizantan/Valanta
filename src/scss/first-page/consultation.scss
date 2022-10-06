@@ -1,0 +1,102 @@
+.consultation {
+    cursor: default;
+    background: url(../../img/consultation/bg2.jpg) no-repeat ;
+    padding: 90px 0;
+    color: #fff;
+    font-weight: 500;
+    &__container{
+        @media (max-width:768px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+    }
+    &__content{
+        display: flex;
+        gap: 140px;
+        margin-bottom: 40px;
+        @media (max-width:768px) {
+            flex-direction: column;
+            gap: 40px;
+            text-align: center;
+        }
+    }
+    &__textblock{}
+    &__title{
+        max-width: 626px;
+        line-height: 138%;
+        font-size: 40px;
+        @media (max-width:768px) {
+            font-size: 28px;
+            margin: 0 auto;
+            margin-bottom: 18px;
+        }
+    }
+    &__subtitle{
+        font-size: 1.4em;
+        line-height: 150%;
+        color: #EFEFEF;
+    }
+    &__warning{
+        background: rgba(255, 255, 255, 0.15);
+        padding: 26px 6px 26px 29px;
+        position: relative;
+       @media (max-width:768px) {
+        max-width: 270px;
+        margin-left: 15px;
+        margin: 0 auto;
+       }
+        &::before{
+            content: url(../../img/consultation/warning-bg.png);
+            position: absolute;
+            left: -27px;
+        }
+    }
+    &__message{
+        line-height: 162%;
+        max-width: 240px;
+        font-size: 1.1em;
+    }
+    &__form{
+        display: flex;
+        gap: 20px;
+        @media (max-width:768px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__form-elem{
+        padding: 15px 0 15px 25px;
+        max-width: 270px;
+        width: 100%;
+        background: rgba(25, 28, 32, 0.3);
+        border: 1px solid #BEBEBE;
+        border-radius: 2px;
+        color: #EFEFEF;
+        &::placeholder{
+            font-weight: 400;
+            font-size: 16px;
+            color: #C4C4C4;
+        }
+        &:focus{
+            background: #191C20;
+            border: 1px solid #FFFFFF;
+            transition: all 200ms ease-in-out;
+        }
+    }
+    &__form-btn {
+        max-width: 170px;
+        width: 100%;
+        padding: 15px 38px;
+        color: #969696;
+        font-weight: 700;
+        @media (min-width:1200px) {
+            &:hover{
+                background: #191C20;
+                transition: all 150ms ease-in-out;
+                border-radius: 2px;
+            }   
+        }
+    }
+}

@@ -139,7 +139,7 @@
             border-radius: 2px;
             font-weight: 700;
             font-size: 16px;
-            color: #fff;
+            color: #fff !important;
 
             @media(min-width:1200px) {
                 &:hover {
@@ -152,7 +152,7 @@
                 border-radius: 0px;
                 border: 1px solid #969696;
                 background: rgba(0, 0, 0, 0);
-                color: #969696;
+                color: #969696 !important;
                 font-weight: 700;
                 font-size: 1.1em;
                 line-height: 20px;
