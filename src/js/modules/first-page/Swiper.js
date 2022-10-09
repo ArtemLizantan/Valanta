@@ -191,3 +191,37 @@ function newsSwiper(){
   }
   
 blogSwiper();
+
+
+function proudSwiper(){
+    const proudSwiper = new Swiper(".proud__swiper", {
+      modules: [Navigation , Autoplay],
+      navigation: {
+        nextEl: ".proud-button-next",
+        prevEl: ".proud-button-prev",
+    },
+    scrollbar: {
+        el: ".proud-scroll",
+    },
+    breakpoints: {
+        310: {
+            slidesPerView: 1,
+        },
+        525: {
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 3,
+        },
+        1200: {
+            slidesPerView: 4,
+        }
+      },
+      speed:900,
+      slidesPerView: 'auto',
+      spaceBetween:3,
+      slidesPerGroup:1,
+      loop:true,
+    });
+  }
+  proudSwiper();

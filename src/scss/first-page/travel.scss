@@ -46,8 +46,8 @@
             line-height: 35px;
         }
         @media (max-width: 425px) {
-        font-size: 0.89em;
-        line-height: 35px;
+        font-size: 0.89em !important;
+        line-height: 35px !important; 
 
         }
     }

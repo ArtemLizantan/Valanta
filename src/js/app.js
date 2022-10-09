@@ -33,3 +33,6 @@ import {
 import {
     blogSwiper
 } from "./modules/first-page/Swiper.js"
+import {
+    proudSwiper
+} from "./modules/first-page/Swiper.js"
