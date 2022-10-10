@@ -1,6 +1,4 @@
-
 .send {
-
 
     &__block {
         display: flex;
@@ -19,18 +17,20 @@
         margin-bottom: 40px;
 
         @media (max-width: 768px) {
-            font-size: 1.4em !important ; 
+            font-size: 1.4em !important;
             white-space: unset !important;
         }
+
         @media (max-width: 525px) {
             font-size: 1.15em;
         }
+
         @media (max-width: 425px) {
             font-size: 1em;
         }
-       
 
-       
+
+
     }
 
     &__subtitle {
@@ -41,13 +41,15 @@
             text-align: center;
             font-size: 1.2em !important;
         }
+
         @media (max-width: 525px) {
             font-size: 1em;
             line-height: 35px;
         }
+
         @media (max-width: 425px) {
-        font-size: 0.89em !important;
-        line-height: 35px !important; 
+            font-size: 0.89em !important;
+            line-height: 35px !important;
 
         }
     }
@@ -91,6 +93,7 @@
         @media (max-width: 476px) {
             margin: 0 20px;
         }
+
         @media (max-width: 320px) {
             margin: 0;
             gap: 10px;
@@ -99,52 +102,65 @@
 }
 
 
-.travel{
+.travel {
+    margin-bottom: 0;
+
     @media (max-width:1200px) {
         background-image: unset;
     }
-    background-image: url(../../img/travel/bg-pic.png) ;
+
+    background-image: url(../../img/travel/bg-pic.png);
     background-repeat: no-repeat;
     background-position: 80%;
     background-position-y: 65%;
     background-color: #DD4053;
     padding: 60px 0;
-    &__title{
+
+    &__title {
         color: #fff;
         font-size: 2em;
         white-space: nowrap;
 
     }
-    &__subtitle{
+
+    &__subtitle {
         color: #fff;
         font-size: 1.1em;
-        @media  (max-width:768px) {
+
+        @media (max-width:768px) {
             font-size: 36px;
             line-height: 60px;
         }
     }
-    &__button{
+
+    &__button {
         border-radius: 2px;
         background-color: #fff;
         color: #DA2032 !important;
-        &:hover{
+
+        &:hover {
             color: #fff !important;
+
             @media (max-width:1200px) {
-             display: none;
-                
+                display: none;
+
             }
         }
     }
+
     &__form {}
-    &__email{
+
+    &__email {
         background: rgba(255, 255, 255, 0.2);
         border: 1px solid #FFFFFF;
         border-radius: 2px;
-        &::placeholder{
-          color: #fff;
+
+        &::placeholder {
+            color: #fff;
         }
     }
-    &__form-input{
+
+    &__form-input {
         &::before {
             background: #DD4053;
             border: 1px solid white;
@@ -152,5 +168,3 @@
     }
 
 }
-
-

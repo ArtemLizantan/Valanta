@@ -1,0 +1,117 @@
+.relax {
+    margin-bottom: 90px;
+
+    &__body {
+        align-items: center;
+    }
+
+    &__title {
+        font-size: 31px;
+        font-weight: 500;
+        line-height: 42px;
+    }
+
+    &__text {
+        max-width: 234px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #DD4053;
+
+        @media(max-width: 1200px) {
+            max-width: unset;
+        }
+    }
+}
+
+.country {
+    margin-top: 104px;
+
+    &__body {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        @media(max-width: 1200px) {
+            flex-direction: column;
+            gap: 90px;
+        }
+    }
+
+    &__item {
+        background: #F8F8F8;
+        padding: 40px 25px;
+        position: relative;
+    }
+
+    &__img {
+        position: absolute;
+        left: 18px;
+        top: -50px;
+    }
+
+    &__button {
+        padding: 8px 55px;
+        border: 1px solid #969696;
+        border-radius: 2px;
+        color: #969696;
+        transition: all 0.5s ease;
+
+        @media(min-width: 1200px) {
+            &:hover {
+                background: #969696;
+                color: #fff;
+            }
+        }
+    }
+
+    &__title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 55px;
+        text-align: right;
+        color: #232323;
+        margin-bottom: 13px;
+
+    }
+}
+
+.relax-bottom {
+    &__body {
+        margin-top: 40px;
+    }
+
+    &__flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media(max-width: 1200px) {
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+
+    &__first {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        color: #252525;
+        @media(max-width: 1200px) {
+            text-align: center;
+        }
+    }
+
+    &__second {
+        padding: 15px 17px;
+        border: 1px solid #C4C4C4;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+        color: #252525;
+        @media(max-width: 1200px) {
+            text-align: center;
+        }
+    }
+}

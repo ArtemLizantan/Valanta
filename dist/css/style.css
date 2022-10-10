@@ -89,6 +89,7 @@ section {
   .title__main {
     font-size: 38px;
     font-weight: 600;
+    text-align: center;
   }
 }
 @media (max-width: 1112px) {
@@ -1388,6 +1389,11 @@ body._lock {
 .best-hotels__border {
   width: 237px;
 }
+@media (max-width: 1200px) {
+  .best-hotels__border {
+    width: 100%;
+  }
+}
 
 .content__top {
   padding: 5px;
@@ -1858,6 +1864,7 @@ body._lock {
 }
 
 .travel {
+  margin-bottom: 0;
   background-image: url(../../img/travel/bg-pic.png);
   background-repeat: no-repeat;
   background-position: 80%;
@@ -2087,6 +2094,231 @@ body._lock {
     display: none;
   }
 }
+.about {
+  margin-bottom: 0;
+}
+.about__wrapper {
+  max-width: 1400px;
+  background: url(../../img/about/bg.svg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 90px 0;
+}
+.about__container {
+  max-width: 1040px;
+}
+.about__body {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+@media (max-width: 1200px) {
+  .about__body {
+    flex-direction: column;
+  }
+}
+.about__box {
+  position: relative;
+  height: 165px;
+  width: 505px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.07);
+  padding: 30px 30px 0px 30px;
+}
+@media (max-width: 1200px) {
+  .about__box {
+    width: unset;
+    max-width: 505px;
+  }
+}
+.about__box::after {
+  content: "";
+  width: 6px;
+  height: 100%;
+  background: #DD4053;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  opacity: 0;
+  left: 0;
+  transition: all 0.5s ease-in-out;
+}
+.about__box:hover::after {
+  visibility: visible;
+  opacity: 1;
+}
+.about__item-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.about__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #656565;
+}
+.about__text span {
+  font-weight: 700;
+}
+.about__checkbox-img {
+  padding: 8px;
+  background-color: #fff;
+  border: 1px solid #C6C6C6;
+}
+
+.tour {
+  background: url(../../img/tour/bg.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.tour__title-text {
+  color: #fff;
+  max-width: 545px;
+  text-transform: uppercase;
+}
+.tour__body {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+.tour__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+@media (max-width: 1200px) {
+  .tour__text {
+    text-align: center;
+  }
+}
+.tour__button {
+  background-color: #fff;
+  border: none;
+  color: #969696 !important;
+}
+.tour__title {
+  padding: 98px 0;
+}
+
+.relax {
+  margin-bottom: 90px;
+}
+.relax__body {
+  align-items: center;
+}
+.relax__title {
+  font-size: 31px;
+  font-weight: 500;
+  line-height: 42px;
+}
+.relax__text {
+  max-width: 234px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #DD4053;
+}
+@media (max-width: 1200px) {
+  .relax__text {
+    max-width: unset;
+  }
+}
+
+.country {
+  margin-top: 104px;
+}
+.country__body {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+@media (max-width: 1200px) {
+  .country__body {
+    flex-direction: column;
+    gap: 90px;
+  }
+}
+.country__item {
+  background: #F8F8F8;
+  padding: 40px 25px;
+  position: relative;
+}
+.country__img {
+  position: absolute;
+  left: 18px;
+  top: -50px;
+}
+.country__button {
+  padding: 8px 55px;
+  border: 1px solid #969696;
+  border-radius: 2px;
+  color: #969696;
+  transition: all 0.5s ease;
+}
+@media (min-width: 1200px) {
+  .country__button:hover {
+    background: #969696;
+    color: #fff;
+  }
+}
+.country__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 55px;
+  text-align: right;
+  color: #232323;
+  margin-bottom: 13px;
+}
+
+.relax-bottom__body {
+  margin-top: 40px;
+}
+.relax-bottom__flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 1200px) {
+  .relax-bottom__flex {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+.relax-bottom__first {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #252525;
+}
+@media (max-width: 1200px) {
+  .relax-bottom__first {
+    text-align: center;
+  }
+}
+.relax-bottom__second {
+  padding: 15px 17px;
+  border: 1px solid #C4C4C4;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #252525;
+}
+@media (max-width: 1200px) {
+  .relax-bottom__second {
+    text-align: center;
+  }
+}
+
 .page {
   flex: 1 1 auto;
 }
