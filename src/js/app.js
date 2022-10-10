@@ -30,3 +30,9 @@ import {
 import {
     newsSwiper
 } from "./modules/first-page/Swiper.js"
+import {
+    blogSwiper
+} from "./modules/first-page/Swiper.js"
+import {
+    proudSwiper
+} from "./modules/first-page/Swiper.js"

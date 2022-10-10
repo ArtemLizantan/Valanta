@@ -153,3 +153,75 @@ function newsSwiper() {
 }
 
 newsSwiper();
+
+function blogSwiper() {
+    const blogSwiper = new Swiper(".blog__swiper", {
+        modules: [Navigation, Autoplay],
+        loop: true,
+        navigation: {
+            nextEl: ".blog__button-next",
+            prevEl: ".blog__button-prev",
+        },
+        autoplay: {
+            delay: 4500,
+        },
+        scrollbar: {
+            el: ".blog-scroll",
+        },
+        breakpoints: {
+            310: {
+                slidesPerView: 1,
+            },
+            525: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 3,
+            },
+            1200: {
+                slidesPerView: 4,
+            }
+        },
+        speed: 900,
+        slidesPerView: 4,
+        spaceBetween: 30,
+        slidesPerGroup: 1,
+
+    });
+}
+
+blogSwiper();
+
+
+function proudSwiper() {
+    const proudSwiper = new Swiper(".proud__swiper", {
+        modules: [Navigation, Autoplay],
+        navigation: {
+            nextEl: ".proud-button-next",
+            prevEl: ".proud-button-prev",
+        },
+        scrollbar: {
+            el: ".proud-scroll",
+        },
+        breakpoints: {
+            310: {
+                slidesPerView: 1,
+            },
+            525: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 3,
+            },
+            1200: {
+                slidesPerView: 4,
+            }
+        },
+        speed: 900,
+        slidesPerView: 'auto',
+        spaceBetween: 3,
+        slidesPerGroup: 1,
+        loop: true,
+    });
+}
+proudSwiper();
