@@ -111,48 +111,54 @@
             background-color: unset;
         }
     }
+
+    &__form{
+        width: 100%;
+        height: auto;
+    }
+    &__form-wrapper{
+        display: flex;
+        align-items: center;
+    }
+    &__form-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+        input {
+            width: 50%;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            border: 1px solid rgba(46, 46, 46, 0.2);
+            border-radius: 2px;
+            padding-left: 10px;
+        }
+    }
 }
 
 // Настройка куда что
 
-.search {
+
+.form {
     &__body {
         margin-top: 66px;
-    }
-
-    &__wrapper {
+        padding: 30px;
         background: #F8F8F8;
         width: 100%;
-        height: 140px;
-        display: flex;
-        padding: 30px 50px;
-    }
-
-    &__form {
-        display: flex;
-        align-items: center;
-        width: 845px;
-        background: #FFFFFF;
-        border: 1px solid rgba(46, 46, 46, 0.2);
-        border-radius: 2px;
-        height: 50px;
-
-        input {
-            border: 1px solid rgba(46, 46, 46, 0.2);
-            height: 50px;
-            flex-shrink: 100%;
-            text-align: center;
-        }
+        height: auto;
     }
 
     &__box {
-        display: flex;
-        align-items: center;
-        gap: 22px;
+        input {
+            width: 50%;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            border: 1px solid rgba(46, 46, 46, 0.2);
+            border-radius: 2px;
+            padding-left: 10px;
+        }
     }
-
-    &__search {
-        width: 100px;
-    }
-
 }

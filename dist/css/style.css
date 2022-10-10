@@ -1577,39 +1577,46 @@ body._lock {
 .actual__content:hover {
   background-color: unset;
 }
-
-.search__body {
-  margin-top: 66px;
-}
-.search__wrapper {
-  background: #F8F8F8;
+.actual__form {
   width: 100%;
-  height: 140px;
-  display: flex;
-  padding: 30px 50px;
+  height: auto;
 }
-.search__form {
+.actual__form-wrapper {
   display: flex;
   align-items: center;
-  width: 845px;
-  background: #FFFFFF;
+}
+.actual__form-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.actual__form-box input {
+  width: 50%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
   border: 1px solid rgba(46, 46, 46, 0.2);
   border-radius: 2px;
-  height: 50px;
+  padding-left: 10px;
 }
-.search__form input {
-  border: 1px solid rgba(46, 46, 46, 0.2);
-  height: 50px;
-  flex-shrink: 100%;
-  text-align: center;
+
+.form__body {
+  margin-top: 66px;
+  padding: 30px;
+  background: #F8F8F8;
+  width: 100%;
+  height: auto;
 }
-.search__box {
+.form__box input {
+  width: 50%;
+  height: 50px;
   display: flex;
-  align-items: center;
-  gap: 22px;
-}
-.search__search {
-  width: 100px;
+  justify-content: center;
+  border: 1px solid rgba(46, 46, 46, 0.2);
+  border-radius: 2px;
+  padding-left: 10px;
 }
 
 .page {
