@@ -1,0 +1,42 @@
+.tour {
+    background: url(../../img/tour/bg.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+
+    &__title-text {
+        color: #fff;
+        max-width: 545px;
+        text-transform: uppercase;
+    }
+
+    &__body {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        color: #FFFFFF;
+        margin-bottom: 30px;
+
+        @media (max-width: 1200px) {
+            text-align: center;
+        }
+    }
+
+    &__button {
+        background-color: #fff;
+        border: none;
+        color: #969696 !important;
+    }
+
+    &__title {
+        padding: 98px 0;
+    }
+}

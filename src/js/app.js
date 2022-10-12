@@ -28,5 +28,15 @@ import {
 } from "./modules/first-page/Swiper.js"
 
 import {
-    actual
-} from "./modules/first-page/actual.js"
+    newsSwiper
+} from "./modules/first-page/Swiper.js"
+import {
+    blogSwiper
+} from "./modules/first-page/Swiper.js"
+import {
+    proudSwiper
+} from "./modules/first-page/Swiper.js"
+
+import {
+    numbers
+} from "./modules/first-page/numbers.js"

@@ -112,20 +112,23 @@
         }
     }
 
-    &__form{
+    &__form {
         width: 100%;
         height: auto;
     }
-    &__form-wrapper{
+
+    &__form-wrapper {
         display: flex;
         align-items: center;
     }
+
     &__form-box {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         gap: 30px;
+
         input {
             width: 50%;
             height: 50px;

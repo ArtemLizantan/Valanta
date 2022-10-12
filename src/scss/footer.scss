@@ -1,5 +1,6 @@
 .footer {
-    background: linear-gradient(180deg,#ececec 0,rgba(232,232,232,0) 87.87%,#fff 100%);
+    background: linear-gradient(180deg, #ececec 0, rgba(232, 232, 232, 0) 87.87%, #fff 100%);
+
     &__body {
         padding: 30px 0;
     }
@@ -26,9 +27,9 @@
             line-height: 60px;
             text-align: center;
         }
-       
 
-        @media (max-width: 425px){
+
+        @media (max-width: 425px) {
             font-size: 36px;
         }
     }
@@ -81,6 +82,7 @@
         @media (max-width: 476px) {
             margin: 0 20px;
         }
+
         @media (max-width: 320px) {
             margin: 0;
             gap: 10px;
@@ -125,11 +127,13 @@
 
     &__link {
         transition: color .4s ease;
+
         @media (max-width: 768px) {
             font-size: 20px;
         }
+
         @media (min-width: 768px) {
-            &:hover{
+            &:hover {
                 color: #dd4053;
             }
         }
@@ -159,7 +163,8 @@
 .copyrigth {
     &__body {
         margin-top: 22px;
-        @media (max-width: 768px){
+
+        @media (max-width: 768px) {
             padding-bottom: 30px;
         }
     }
@@ -168,7 +173,8 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        @media (max-width: 567px){
+
+        @media (max-width: 567px) {
             flex-direction: column-reverse;
             gap: 30px;
         }
@@ -216,7 +222,7 @@
 #form-input~label::before {
     content: '';
     line-height: 1em;
-    border: 2px inset red;
+    border: 1px solid red;
     border-radius: 50%;
     margin: 0.25em;
     display: inline-block;
@@ -231,7 +237,7 @@
     color: white;
     color: white;
     background-color: red;
-    border: 2px inset red;
+    border: 1px solid #fff;
 }
 
 
@@ -264,7 +270,7 @@
 #form-input-second~label::before {
     content: '';
     line-height: 1em;
-    border: 2px inset red;
+    border: 1px solid red;
     border-radius: 50%;
     margin: 0.25em;
     display: inline-block;
@@ -272,12 +278,12 @@
     height: 25px;
 }
 
-#form-input-second:checked~label::before {
+#form-input-second:checked::before {
     background: url(../img/header/checked.svg);
     background-repeat: no-repeat;
     background-position: center;
     color: white;
     color: white;
     background-color: red;
-    border: 2px inset red;
+    border: 1px solid red;
 }

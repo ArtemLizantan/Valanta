@@ -118,7 +118,20 @@ body {
 @import "first-page/second-header";
 @import "first-page/hero";
 @import "first-page/best-hotels";
+@import "first-page/news";
 @import "first-page/actual";
+@import "first-page/blog";
+@import "first-page/travel";
+@import "first-page/consultation";
+@import "first-page/proud";
+@import "first-page/about";
+@import "first-page/tour";
+@import "first-page/relax";
+@import "first-page/service";
+@import "first-page/numbers";
+
+
+
 
 
 
@@ -143,10 +156,12 @@ body {
 
 
 
-.swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
+.swiper-horizontal>.swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
 	bottom: -25px;
 	visibility: hidden;
 	opacity: 0;
+
 	@media (max-width: 1112px) {
 		visibility: visible;
 		opacity: 1;

@@ -1,5 +1,4 @@
-@import '/node_modules/swiper/swiper-bundle.css';
-
+@import "../../node_modules/swiper/swiper-bundle.min.css";
 
 .hero {
 
@@ -19,6 +18,10 @@
         height: 100%;
         object-fit: cover;
         background: linear-gradient(180deg, rgba(20, 20, 30, 0.1) 29.48%, #14141E 100%);
+
+        @media(max-width:1200px) {
+            width: unset;
+        }
     }
 
     &__suggest {
@@ -89,7 +92,7 @@
     }
 
     &__columns {
-        @media (max-width:$md2 + px) {
+        @media (max-width:$md2+px) {
             flex-direction: column;
         }
 
@@ -103,7 +106,7 @@
     &__first-column {
 
         &-title {
-            @media (max-width:$md4 + px) {
+            @media (max-width:$md4+px) {
                 font-size: 1.7em;
             }
 
@@ -124,7 +127,7 @@
         }
 
         &-buttons {
-            @media (max-width:$md3 + px) {
+            @media (max-width:$md3+px) {
                 flex-direction: column;
             }
 
@@ -139,7 +142,7 @@
             border-radius: 2px;
             font-weight: 700;
             font-size: 16px;
-            color: #fff;
+            color: #fff !important;
 
             @media(min-width:1200px) {
                 &:hover {
@@ -152,7 +155,7 @@
                 border-radius: 0px;
                 border: 1px solid #969696;
                 background: rgba(0, 0, 0, 0);
-                color: #969696;
+                color: #969696 !important;
                 font-weight: 700;
                 font-size: 1.1em;
                 line-height: 20px;
@@ -189,7 +192,7 @@
         }
 
         &-point {
-            @media (max-width:$md4 + px) {
+            @media (max-width:$md4+px) {
                 font-size: 1em;
             }
 

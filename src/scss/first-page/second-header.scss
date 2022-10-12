@@ -1,7 +1,8 @@
 .menu {
-    @media (min-width: 1200px){
-        height: 70px; 
+    @media (min-width: 1200px) {
+        height: 70px;
     }
+
     &__body {
 
         // Mobile
@@ -52,7 +53,7 @@
     }
 
     &__pre-scrin {
-        @media (max-width: 1200px){
+        @media (max-width: 1200px) {
             opacity: 0;
             z-index: 1;
             visibility: hidden;
@@ -65,12 +66,13 @@
             transition: opacity .25s, visibility 0s linear .25s;
             background-color: hsla(0, 0%, 7%, .36);
             backdrop-filter: blur(4px);
-            -webkit-backdrop-filter: blur(4px);;
+            -webkit-backdrop-filter: blur(4px);
+            ;
         }
     }
 
     &__pre-scrin._active {
-        @media (max-width: 1200px){
+        @media (max-width: 1200px) {
             opacity: 1;
             visibility: visible;
             transition: opacity .8s ease, visibility 0s;
@@ -278,7 +280,8 @@
         width: 10px;
         height: 3px;
     }
-    @media (max-width: 1200px){
+
+    @media (max-width: 1200px) {
         left: 60px;
         top: 10px;
     }
@@ -286,7 +289,8 @@
 
 .agent::after {
     left: 70px;
-    @media (max-width: 1200px){
+
+    @media (max-width: 1200px) {
         left: 100px;
     }
 }
