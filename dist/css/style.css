@@ -1648,6 +1648,40 @@ body._lock {
   background-color: unset;
 }
 
+.search__body {
+  margin-top: 66px;
+}
+.search__wrapper {
+  background: #F8F8F8;
+  width: 100%;
+  height: 140px;
+  display: flex;
+  padding: 30px 50px;
+}
+.search__form {
+  display: flex;
+  align-items: center;
+  width: 845px;
+  background: #FFFFFF;
+  border: 1px solid rgba(46, 46, 46, 0.2);
+  border-radius: 2px;
+  height: 50px;
+}
+.search__form input {
+  border: 1px solid rgba(46, 46, 46, 0.2);
+  height: 50px;
+  flex-shrink: 100%;
+  text-align: center;
+}
+.search__box {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+.search__search {
+  width: 100px;
+}
+
 .blog__container {
   margin-left: 203px;
 }
@@ -1672,6 +1706,12 @@ body._lock {
   content: url(../../img/blog/card/arrow-red.svg);
   margin-left: 45px;
   transition: all 0.2s ease-out;
+}
+@media (max-width: 525px) {
+  .blog__card {
+    max-width: 525px;
+    width: 100%;
+  }
 }
 .blog__img {
   height: 140px;
@@ -1911,10 +1951,20 @@ body._lock {
     margin-bottom: 18px;
   }
 }
+@media (max-width: 525px) {
+  .consultation__title {
+    font-size: 1.4em;
+  }
+}
 .consultation__subtitle {
   font-size: 1.4em;
   line-height: 150%;
   color: #EFEFEF;
+}
+@media (max-width: 525px) {
+  .consultation__subtitle {
+    font-size: 1em;
+  }
 }
 .consultation__warning {
   background: rgba(255, 255, 255, 0.15);
@@ -1926,6 +1976,11 @@ body._lock {
     max-width: 270px;
     margin-left: 15px;
     margin: 0 auto;
+  }
+}
+@media (max-width: 525px) {
+  .consultation__warning {
+    font-size: 1em;
   }
 }
 .consultation__warning::before {
@@ -1983,7 +2038,7 @@ body._lock {
 }
 
 .proud {
-  background: url(../../img/proud/bg.png);
+  background-color: #F8F8F8;
   padding: 90px 0;
   font-weight: 500;
 }
@@ -2001,10 +2056,20 @@ body._lock {
     gap: 40px;
   }
 }
+@media (max-width: 525px) {
+  .proud__text-block {
+    text-align: center;
+  }
+}
 .proud__title {
   font-size: 40px;
   line-height: 138%;
   font-size: 2.8em;
+}
+@media (max-width: 525px) {
+  .proud__title {
+    font-size: 1.4em;
+  }
 }
 .proud__subtitles {
   display: flex;
@@ -2012,6 +2077,11 @@ body._lock {
   gap: 30px;
   max-width: 520px;
   width: 100%;
+}
+@media (max-width: 525px) {
+  .proud__subtitles {
+    font-size: 1em;
+  }
 }
 .proud__subtitle {
   line-height: 150%;
@@ -2040,14 +2110,188 @@ body._lock {
   object-fit: none;
   height: 97px;
 }
-.proud-button-next, .proud-button-prev {
-  position: absolute;
+.proud-scrollbar {
+  position: relative !important;
+  bottom: 0 !important;
 }
 @media (max-width: 1200px) {
   .proud-button-next, .proud-button-prev {
     display: none;
   }
 }
+.proud__buttons {
+  position: absolute;
+  top: 77%;
+  left: -6%;
+}
+.proud-button-next {
+  margin-left: 1148px;
+  top: 0%;
+  position: absolute;
+}
+.collab {
+  padding: 90px 0;
+}
+@media (min-width: 1200px) {
+  .collab {
+    background: url(../../img/collab/collab-bg-1.png) left 39% no-repeat, url(../../img/collab/collab-bg-2.png) no-repeat right bottom 21%;
+  }
+}
+.collab__block {
+  display: flex;
+  gap: 67px;
+  margin-bottom: 72px;
+}
+@media (max-width: 768px) {
+  .collab__block {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+}
+.collab__img {
+  position: relative;
+}
+@media (min-width: 1200px) {
+  .collab__img::before {
+    content: url(../../img/collab/collab-decor-1.svg);
+    position: absolute;
+    bottom: 0;
+    top: 62%;
+    left: -23%;
+  }
+}
+.collab__img img {
+  width: 100%;
+}
+.collab__title {
+  max-width: 607px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 2.2em;
+  line-height: 135%;
+  margin-bottom: 31px;
+}
+@media (max-width: 525px) {
+  .collab__title {
+    font-size: 1.5em;
+  }
+}
+.collab__subtitle {
+  font-size: 1.4em;
+  font-weight: 500;
+  line-height: 150%;
+  color: #656565;
+  max-width: 589px;
+  width: 100%;
+}
+@media (max-width: 525px) {
+  .collab {
+    font-size: 1.1em;
+  }
+}
+.collab .card-block__cooperate {
+  display: flex;
+  align-items: center;
+  margin-bottom: 28px;
+  gap: 104px;
+}
+@media (max-width: 525px) {
+  .collab .card-block__cooperate {
+    flex-direction: column;
+    gap: 25px;
+  }
+}
+.collab .card-block__title {
+  color: #323232;
+  font-weight: 500;
+  font-size: 1.4em;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #323232;
+}
+@media (max-width: 525px) {
+  .collab .card-block__title {
+    font-size: 1.1em;
+    text-align: center;
+  }
+}
+.collab .card-block__btn {
+  padding: 13px 25px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #969696;
+  border: 1px solid #969696;
+  border-radius: 2px;
+  transition: 500ms ease;
+}
+@media (min-width: 1200px) {
+  .collab .card-block__btn:hover {
+    background: #dd4053;
+    color: #fff;
+    border: unset;
+  }
+}
+.collab .card-block__cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .collab .card-block__cards {
+    justify-content: center;
+  }
+}
+.collab .card-block .card {
+  height: 263px;
+  padding: 30px 20px 13px 30px;
+  max-width: 347px;
+  width: 100%;
+  background-color: #F8F8F8;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #E3E3E3;
+}
+@media (max-width: 768px) {
+  .collab .card-block .card {
+    max-width: 304px;
+  }
+}
+@media (min-width: 1200px) {
+  .collab .card-block .card:hover {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.07);
+    border-top: 6px solid #DD4053;
+    transition: 180ms ease-in-out;
+    cursor: pointer;
+  }
+}
+.collab .card-block .card__title {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 1.4em;
+  line-height: 122%;
+  max-width: 249px;
+  width: 100%;
+}
+.collab .card-block .card__subtitle {
+  font-size: 1.1em;
+  line-height: 162%;
+  color: #848484;
+  max-width: 277px;
+  width: 100%;
+}
+.collab .card-block .card__number {
+  margin-top: auto;
+  margin-left: auto;
+}
+.collab .card-block .card:nth-child(1), .collab .card-block .card:nth-child(2), .collab .card-block .card:nth-child(4), .collab .card-block .card:nth-child(5) {
+  border-right: 1px solid #E3E3E3;
+}
+.collab .card-block .card:nth-child(4), .collab .card-block .card:nth-child(5), .collab .card-block .card:nth-child(6) {
+  border-bottom: unset;
+}
+
 .page {
   flex: 1 1 auto;
 }

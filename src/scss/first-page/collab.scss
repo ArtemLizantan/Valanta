@@ -1,0 +1,166 @@
+.collab{
+    padding: 90px 0;
+    @media (min-width:1200px) {
+    background: url(../../img/collab/collab-bg-1.png) left 39% no-repeat , url(../../img/collab/collab-bg-2.png) no-repeat right bottom 21%;
+    }
+
+    &__block{
+        display: flex;
+        gap: 67px;
+        margin-bottom: 72px;
+        @media (max-width:768px) {
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
+    }
+
+    &__img{
+        position: relative;
+        @media (min-width:1200px) {
+            &::before{
+                content: url(../../img/collab/collab-decor-1.svg);
+                position: absolute;
+                bottom: 0;
+                top: 62%;
+                left: -23%;
+            }
+            }
+            img {
+                width: 100%;
+            }
+    }
+
+    &__textblock{}
+
+    &__title{
+        max-width: 607px;
+        width: 100%;
+        font-weight: 500;
+        font-size: 2.2em;
+        line-height: 135%;
+        margin-bottom: 31px;
+        @media (max-width:525px) {
+            font-size: 1.5em;
+        }
+    }
+
+    &__subtitle{
+        font-size: 1.4em;
+        font-weight: 500;
+        line-height: 150%;
+        color: #656565;
+        max-width: 589px;
+        width: 100%;
+    }
+    @media (max-width:525px) {
+        font-size: 1.1em;
+    }
+
+
+    .card-block{
+        &__cooperate{
+            display: flex;
+            align-items: center;
+            margin-bottom: 28px;
+            gap: 104px;
+            @media (max-width:525px) {
+                flex-direction: column;
+                gap: 25px;
+            }
+        }
+
+        &__title{
+            color:#323232;
+            font-weight: 500;
+            font-size: 1.4em;
+            line-height: 150%;
+            text-transform: uppercase;
+            color: #323232;
+            @media (max-width:525px) {
+                font-size: 1.1em;
+                text-align: center;
+            }
+        }
+
+        &__btn{
+            padding: 13px 25px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            color: #969696;
+            border: 1px solid #969696;
+            border-radius: 2px;
+            transition: 500ms ease;
+            @media (min-width:1200px) {
+                
+                &:hover{
+                    background: #dd4053;
+                    color: #fff;
+                    border: unset;
+                }
+            }
+        }
+        &__cards{
+            display: flex;
+            flex-wrap: wrap;
+            @media (max-width:768px) {
+             justify-content: center;   
+            }
+        }
+        .card{
+            height: 263px;
+            padding: 30px 20px 13px 30px;
+            max-width: 347px;
+            width: 100%;
+            background-color: #F8F8F8;
+            display: flex;
+            flex-direction: column;
+            border-bottom: 1px solid #E3E3E3;
+            @media (max-width:768px) {
+                max-width: 304px;
+               }
+            @media (min-width:1200px) {
+                &:hover{
+                    background: #FFFFFF;
+                    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.07);
+                    border-top: 6px solid #DD4053;
+                    transition: 180ms ease-in-out;
+                    cursor: pointer;
+                }
+            }
+            &__title{
+                margin-bottom: 10px;
+                font-weight: 500;
+                font-size: 1.4em;
+                line-height: 122%;
+                max-width: 249px;
+                width: 100%;
+            }
+            &__subtitle{
+                font-size: 1.1em;
+                line-height: 162%;
+                color: #848484;
+                max-width: 277px;
+                width: 100%;
+            }
+            &__number{
+                margin-top: auto;
+                margin-left: auto;
+            }
+        }
+        .card{
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(4),
+            &:nth-child(5){
+            border-right: 1px solid #E3E3E3;
+            }
+            &:nth-child(4),
+            &:nth-child(5),
+            &:nth-child(6){
+                border-bottom: unset;
+            }
+        }
+    }
+}

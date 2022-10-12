@@ -201,7 +201,7 @@ function proudSwiper(){
         prevEl: ".proud-button-prev",
     },
     scrollbar: {
-        el: ".proud-scroll",
+        el: ".proud-scrollbar",
     },
     breakpoints: {
         310: {
@@ -218,10 +218,9 @@ function proudSwiper(){
         }
       },
       speed:900,
-      slidesPerView: 'auto',
+      slidesPerView: 1,
       spaceBetween:3,
       slidesPerGroup:1,
-      loop:true,
     });
   }
   proudSwiper();
