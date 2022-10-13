@@ -76,26 +76,50 @@
 	background-color: #FF6464;
 	transition: all 0.5s ease;
 	color: #fff !important;
+	transition: background .3s ease;
 
 	a {
-		
+
 		text-align: center;
 	}
 
-	&:hover {
-		background-color: black;
+	@media (min-width: 1200px) {
+		&:hover {
+			background-color: black;
+		}
 	}
 }
 
 %title {
 	font-weight: 500;
-	font-size: 40px;
+	font-size: 45px;
 	line-height: 55px;
 	color: #232323;
 }
 
+%title-button {
+	padding: 14px 32px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 17px;
+	color: #969696;
+	border: 1px solid #969696;
+	transition: background .3s ease;
 
-%subtitle{
+	a {
+
+		text-align: center;
+	}
+
+	@media (min-width: 1200px) {
+		&:hover {
+			background-color: black;
+			color: white;
+		}
+	}
+}
+
+%subtitle {
 	font-weight: 500;
 	font-size: 18px;
 	line-height: 30px;
@@ -103,3 +127,54 @@
 }
 
 
+.title {
+	margin-bottom: 52px;
+
+	&__body {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 40px;
+
+		@media (max-width: 1112px) {
+			flex-direction: column;
+			gap: 20px;
+		}
+	}
+
+	&__main {
+		@extend %title;
+
+		@media (max-width: 1112px) {
+			font-size: 38px;
+			font-weight: 600;
+			text-align: center;
+		}
+	}
+
+	&__button {
+		@extend %title-button;
+
+		@media (max-width: 1112px) {
+			width: 100%;
+			text-align: center;
+			font-size: 16px;
+		}
+	}
+
+	&__border {
+		border: 1px solid #C4C4C4;
+		max-width: 750px;
+		width: 100%;
+
+		@media (max-width: 1112px) {
+			width: 100%;
+		}
+	}
+
+	&__swiper-button {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+	}
+}

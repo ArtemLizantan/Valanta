@@ -1,0 +1,172 @@
+@import "../../node_modules/swiper/swiper-bundle.min.css";
+
+.best-hotels-swiper {
+    width: 100%;
+    height: auto;
+
+    &__img {
+        position: relative;
+        max-width: 100%;
+        transition: transform 0.3s;
+        height: 450px;
+        width: 460px;
+
+        @media (max-width:1200px) {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.swiper {
+    @media (max-width: 1200px) {
+        height: max-content;
+        width: 100%;
+    }
+
+    &__content {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: all 0.3s;
+
+        @media (min-width: 1200px) {
+            &:hover {
+                background-color: rgba(221, 64, 83, 1);
+            }
+        }
+    }
+}
+
+
+
+
+.best-hotels {
+    &__container {
+        @media (min-width: 1200px) {
+            max-width: 1440px;
+        }
+    }
+
+    &__border {
+        width: 237px;
+
+        @media (max-width: 1200px) {
+            width: 100%;
+        }
+    }
+}
+
+
+
+.content {
+    &__top {
+        padding: 5px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #FFFFFF;
+        background: rgba(0, 0, 0, 0.35);
+        max-width: 195px;
+        margin-top: 20px;
+    }
+
+    &__body {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 130px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 34px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+}
+
+
+
+.swiper-button-next,
+.swiper-button-prev {
+    display: block;
+    position: absolute;
+    border: 1px solid #C6C6C6;
+    width: 50px;
+    height: 50px;
+    padding: 12px 21px;
+    border-radius: 50%;
+    margin-top: 0;
+    position: relative;
+    z-index: 2;
+
+    @media (max-width: 1200px) {
+        display: none;
+    }
+
+    @media (min-width: 1200px) {
+        &:hover {
+            background-color: grey;
+        }
+    }
+}
+
+.swiper-button-next {
+    left: 0;
+    right: 0;
+
+    &::after {
+        content: '';
+        background: url(../../img/swiper/rigth.svg);
+        width: 25px;
+        height: 7px;
+        position: absolute;
+        top: 42%;
+        right: 25%;
+    }
+
+    @media (max-width: 1200px) {
+        right: 0;
+        left: auto;
+    }
+
+}
+
+.swiper-button-prev {
+    left: 0;
+    right: 0;
+
+    @media (max-width:1200px) {
+        left: 0;
+    }
+
+    &::after {
+        content: '';
+        background: url(../../img/swiper/rigth.svg);
+        width: 25px;
+        height: 7px;
+        position: absolute;
+        top: 42%;
+        right: 25%;
+        transform: rotate(180deg);
+    }
+}
+
+.swiper-button-prev .swiper-button-disabled {
+    opacity: .35;
+    cursor: auto;
+    pointer-events: none;
+}
+
+.swiper-button-next .swiper-button-disabled {
+    opacity: .35;
+    cursor: auto;
+    pointer-events: none;
+}

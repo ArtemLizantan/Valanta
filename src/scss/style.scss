@@ -1,13 +1,16 @@
 .main {
 	min-height: calc(100vh - 513px);
 	flex: 1 1 auto;
-	margin-top: 120px;
+	margin-top: 170px;
 
-	@media(max-width:768px) {
-		margin-top: 60px;
+	@media(max-width:1200px) {
+		margin-top: 80px;
 	}
 }
 
+section {
+	margin-bottom: 100px;
+}
 
 
 
@@ -111,8 +114,30 @@ body {
 
 @import "header";
 @import "footer";
-@import "second-header";
 @import "burger";
+@import "first-page/second-header";
+@import "first-page/hero";
+@import "first-page/best-hotels";
+@import "first-page/news";
+@import "first-page/actual";
+@import "first-page/numbers";
+@import "first-page/about";
+@import "first-page/relax";
+@import "first-page/service";
+@import "first-page/blog";
+@import "first-page/travel";
+@import "first-page/consultation";
+@import "first-page/proud";
+@import "first-page/collab";
+@import "first-page/benefit";
+@import "first-page/tour";
+
+
+
+
+
+
+
 
 
 
@@ -123,10 +148,6 @@ body {
 .page {
 	// padding: 90px 0px 0px 0px;
 	flex: 1 1 auto;
-
-	@media (max-width: $md3+px) {
-		padding: 30px 0px 0px 0px;
-	}
 }
 
 //===================================================================================================================================
@@ -137,4 +158,37 @@ body {
 
 .footer {
 	margin-top: 513px;
+}
+
+
+
+.swiper-horizontal>.swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+	bottom: -25px;
+	visibility: hidden;
+	opacity: 0;
+
+	@media (max-width: 1112px) {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+.swiper-scrollbar-drag {
+	background-color: red;
+}
+
+.actual-button-prev,
+.actual-button-next {
+	position: absolute;
+	top: 45%;
+}
+
+.actual-button-prev {
+	left: -70px;
+}
+
+.actual-button-next {
+	right: -70px;
+	left: unset;
 }
