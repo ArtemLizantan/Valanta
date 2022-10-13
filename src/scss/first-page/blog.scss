@@ -26,7 +26,10 @@
                 transition: all 0.2s ease-out;
             }
         }
-
+        @media (max-width:525px) {
+            max-width: 525px;
+            width: 100%;
+        }
         max-width: 300px;
         cursor: pointer;
         padding: 15px 15px 26px 15px;

@@ -165,7 +165,7 @@
             height: 0;
             visibility: hidden;
             opacity: 0;
-            
+
         }
     }
 
@@ -174,11 +174,12 @@
 
         // Pc
         @media (min-width: $md2+px) {
-            height: 100%;
             opacity: 1;
             visibility: visible;
+            transform: translate(0px, 0%);
             pointer-events: visible;
         }
+
         // Mobile
 
         @media (max-width: 1200px) {

@@ -191,18 +191,19 @@ blogSwiper();
 
 
 function proudSwiper() {
-    const proudSwiper = new Swiper(".proud__swiper", {
+    const  proudSwiper = new Swiper(".proud__swiper", {
+        slidesPerView: 3,
         speed: 900,
-        // slidesPerView: 'auto',
-        spaceBetween: 3,
-        slidesPerGroup: 1,
-        loop: true,
+        scrollbar: true,
         navigation: {
-            nextEl: ".proud-button-next",
-            prevEl: ".proud-button-prev",
+            nextEl: ".proud-button-next ",
+            prevEl: ".proud-button-prev ",
+        },
+        autoplay: {
+            delay: 4500,
         },
         scrollbar: {
-            el: ".proud-scroll",
+            el: ".blog-scroll",
         },
         breakpoints: {
             310: {
@@ -220,4 +221,5 @@ function proudSwiper() {
         },
     });
 }
+
 proudSwiper();

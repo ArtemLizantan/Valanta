@@ -39,26 +39,33 @@
             margin: 0 auto;
             margin-bottom: 18px;
         }
+        @media (max-width:525px) {
+            font-size: 1.4em;
+        }
     }
 
     &__subtitle {
         font-size: 1.4em;
         line-height: 150%;
         color: #EFEFEF;
+        @media (max-width:525px) {
+            font-size: 1em;
+        }
     }
 
     &__warning {
         background: rgba(255, 255, 255, 0.15);
         padding: 26px 6px 26px 29px;
         position: relative;
-
-        @media (max-width:768px) {
-            max-width: 270px;
-            margin-left: 15px;
-            margin: 0 auto;
-        }
-
-        &::before {
+       @media (max-width:768px) {
+        max-width: 270px;
+        margin-left: 15px;
+        margin: 0 auto;
+       }
+       @media (max-width:525px) {
+        font-size: 1em;
+    }
+        &::before{
             content: url(../../img/consultation/warning-bg.png);
             position: absolute;
             left: -27px;
