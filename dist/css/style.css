@@ -1016,9 +1016,9 @@ body._lock {
 }
 @media (min-width: 991.98px) {
   .menu__sub-list.active {
+    height: 100%;
     opacity: 1;
     visibility: visible;
-    transform: translate(0px, 0%);
     pointer-events: visible;
   }
 }

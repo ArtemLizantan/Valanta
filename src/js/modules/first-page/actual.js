@@ -1,6 +1,0 @@
-function actual() {
-
-
-};
-
-actual();

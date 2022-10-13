@@ -38,18 +38,18 @@ function bestHotelsSwiper() {
     const hotelSwiper = new Swiper(".best-hotels-swiper", {
         slidesPerView: 3,
         spaceBetween: 30,
+        speed: 900,
+        scrollbar: true,
         navigation: {
             nextEl: ".best-hotels-button-next",
             prevEl: ".best-hotels-button-prev",
         },
         autoplay: {
-            delay: 4500
+            delay: 4500,
         },
         scrollbar: {
-            el: ".best-hotel-scroll",
+            el: ".best-scroll",
         },
-        scrollbar: true,
-        speed: 900,
         breakpoints: {
             310: {
                 slidesPerView: 1,
@@ -79,12 +79,12 @@ function actualSwiper() {
     const actualSwiper = new Swiper(".actual-swiper ", {
         slidesPerView: 3,
         spaceBetween: 30,
+        scrollbar: true,
+        speed: 900,
         navigation: {
             nextEl: ".actual-button-next",
             prevEl: ".actual-button-prev",
         },
-        scrollbar: true,
-        speed: 900,
         autoplay: {
             delay: 4500
         },
@@ -119,6 +119,10 @@ actualSwiper();
 function newsSwiper() {
     const newsSwiper = new Swiper(".news__swiper", {
         modules: [Navigation, Autoplay],
+        speed: 900,
+        slidesPerView: 4,
+        spaceBetween: 30,
+        slidesPerGroup: 1,
         loop: true,
         navigation: {
             nextEl: ".news__button-next",
@@ -130,10 +134,6 @@ function newsSwiper() {
         scrollbar: {
             el: ".news-scroll",
         },
-        speed: 900,
-        slidesPerView: 4,
-        spaceBetween: 30,
-        slidesPerGroup: 1,
         breakpoints: {
             310: {
                 slidesPerView: 1,
@@ -147,7 +147,6 @@ function newsSwiper() {
             1200: {
                 slidesPerView: 4,
             }
-
         }
     });
 }
@@ -156,8 +155,11 @@ newsSwiper();
 
 function blogSwiper() {
     const blogSwiper = new Swiper(".blog__swiper", {
-        modules: [Navigation, Autoplay],
         loop: true,
+        speed: 900,
+        slidesPerView: 4,
+        spaceBetween: 30,
+        slidesPerGroup: 1,
         navigation: {
             nextEl: ".blog__button-next",
             prevEl: ".blog__button-prev",
@@ -182,11 +184,6 @@ function blogSwiper() {
                 slidesPerView: 4,
             }
         },
-        speed: 900,
-        slidesPerView: 4,
-        spaceBetween: 30,
-        slidesPerGroup: 1,
-
     });
 }
 
@@ -195,7 +192,11 @@ blogSwiper();
 
 function proudSwiper() {
     const proudSwiper = new Swiper(".proud__swiper", {
-        modules: [Navigation, Autoplay],
+        speed: 900,
+        // slidesPerView: 'auto',
+        spaceBetween: 3,
+        slidesPerGroup: 1,
+        loop: true,
         navigation: {
             nextEl: ".proud-button-next",
             prevEl: ".proud-button-prev",
@@ -217,11 +218,6 @@ function proudSwiper() {
                 slidesPerView: 4,
             }
         },
-        speed: 900,
-        slidesPerView: 'auto',
-        spaceBetween: 3,
-        slidesPerGroup: 1,
-        loop: true,
     });
 }
 proudSwiper();
