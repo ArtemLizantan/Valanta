@@ -2783,6 +2783,45 @@ body._lock {
   margin: 0 auto;
 }
 
+.tour {
+  background: url(../../img/tour/bg.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.tour__title-text {
+  color: #fff;
+  max-width: 545px;
+  text-transform: uppercase;
+}
+.tour__body {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+.tour__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+@media (max-width: 1200px) {
+  .tour__text {
+    text-align: center;
+  }
+}
+.tour__button {
+  background-color: #fff;
+  border: none;
+  color: #969696 !important;
+}
+.tour__title {
+  padding: 98px 0;
+}
+
 .page {
   flex: 1 1 auto;
 }
