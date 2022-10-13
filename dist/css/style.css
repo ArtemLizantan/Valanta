@@ -2292,6 +2292,23 @@ body._lock {
   border-bottom: unset;
 }
 
+.benefit__block {
+  background: url(../../img/benefit/bg.png);
+  padding-top: 172px;
+  padding-bottom: 225px;
+  text-align: center;
+}
+.benefit__title {
+  font-weight: 500;
+  font-size: 2.8em;
+  line-height: 138%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  max-width: 682px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .page {
   flex: 1 1 auto;
 }

@@ -1,0 +1,19 @@
+.benefit{
+    &__block{
+        background: url(../../img/benefit/bg.png);
+        padding-top: 172px;
+        padding-bottom: 225px;
+        text-align: center;
+    }
+    &__title{
+        font-weight: 500;
+        font-size: 2.8em;
+        line-height: 138%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        max-width: 682px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+}
