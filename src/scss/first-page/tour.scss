@@ -10,12 +10,18 @@
         color: #fff;
         max-width: 545px;
         text-transform: uppercase;
+        @media (max-width: 525px) {
+            font-size: 22px;
+        }
     }
 
     &__body {
         flex-direction: column;
         align-items: flex-start;
         gap: 30px;
+        @media (max-width: 768px) {
+            align-items: center;
+        }
     }
 
     &__text {
@@ -24,7 +30,6 @@
         line-height: 28px;
         color: #FFFFFF;
         margin-bottom: 30px;
-
         @media (max-width: 1200px) {
             text-align: center;
         }

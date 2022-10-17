@@ -1,6 +1,10 @@
 .benefit{
+    scroll-behavior: auto;
+    position: relative;
+    background: #F8F8F8;
     &__block{
-        background: url(../../img/benefit/bg.png);
+        background: url(../../img/benefit/bg1.png);
+        background-size: cover;
         padding-top: 172px;
         padding-bottom: 225px;
         text-align: center;
@@ -14,6 +18,57 @@
         max-width: 682px;
         width: 100%;
         margin: 0 auto;
+    }
+    &__content{
+        position: relative;
+    }
+    &__body{
+        @media (max-width:991px) {
+            flex-direction: column;
+            border-radius: 16px;
+        }
+        position: relative;
+        background: white;
+        bottom: 205px;
+        display: flex;
+        padding: 70px 67px 71px 73px;   
+        gap: 30px
+    }
+    &__column{
+        display: flex;
+        gap: 46px;
+    }
+    &__line{}
+    &__textblock{ 
+        display: flex;
+        flex-direction: column;
+        gap: 75px;
+    }
+    &__text{
+        max-width: 420px;
+        width: 100%;
+        line-height: 162%;
+        font-size: 1.1em;
+    }
+    .decor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__element{
+           &.active{
+            border: 1.2px dashed #DD4053;
+           }
+            border-radius: 50%;
+            padding: 15px;
+            border: 1.9px dashed #969696;
+        }
+        &__picture{}
+        &__line{
+            background: #C4C4C4;
+            width: 1px;
+            min-height: 111px;
+            height: 100%;
+        }
     }
 
 };
