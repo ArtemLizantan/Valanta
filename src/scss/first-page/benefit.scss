@@ -1,9 +1,10 @@
 .benefit{
     scroll-behavior: auto;
     position: relative;
-    background: #F8F8F8;
+    background: linear-gradient(180deg, #F8F8F8 -12.15%, #E8E8E8 100%);
+    margin-bottom: unset;
     &__block{
-        background: url(../../img/benefit/bg1.png);
+        background: url(../../img/benefit/bg.png);
         background-size: cover;
         padding-top: 172px;
         padding-bottom: 225px;
@@ -18,6 +19,9 @@
         max-width: 682px;
         width: 100%;
         margin: 0 auto;
+        @media (max-width:425px) {
+            font-size: 1.8em;
+        }
     }
     &__content{
         position: relative;
@@ -29,7 +33,7 @@
         }
         position: relative;
         background: white;
-        bottom: 205px;
+        bottom: 130px;
         display: flex;
         padding: 70px 67px 71px 73px;   
         gap: 30px
@@ -37,6 +41,9 @@
     &__column{
         display: flex;
         gap: 46px;
+        @media (max-width:525px) {
+            gap: 15px;
+        }
     }
     &__line{}
     &__textblock{ 
@@ -49,6 +56,9 @@
         width: 100%;
         line-height: 162%;
         font-size: 1.1em;
+        @media (max-width:425px) {
+            font-size: 0.8em;
+        }
     }
     .decor{
         display: flex;

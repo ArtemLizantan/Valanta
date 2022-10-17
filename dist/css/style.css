@@ -2456,7 +2456,7 @@ body._lock {
   }
 }
 .consultation__warning::before {
-  content: url(../../img/consultation/warning-bg.png);
+  content: url(../../img/consultation/warning-bg.svg);
   position: absolute;
   left: -27px;
 }
@@ -2591,9 +2591,6 @@ body._lock {
   margin-left: 1180px;
   top: 0%;
   position: absolute;
-}
-.collab {
-  padding: 90px 0;
 }
 .collab__block {
   display: flex;
@@ -2773,10 +2770,11 @@ body._lock {
 .benefit {
   scroll-behavior: auto;
   position: relative;
-  background: #F8F8F8;
+  background: linear-gradient(180deg, #F8F8F8 -12.15%, #E8E8E8 100%);
+  margin-bottom: unset;
 }
 .benefit__block {
-  background: url(../../img/benefit/bg1.png);
+  background: url(../../img/benefit/bg.png);
   background-size: cover;
   padding-top: 172px;
   padding-bottom: 225px;
@@ -2792,13 +2790,18 @@ body._lock {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 425px) {
+  .benefit__title {
+    font-size: 1.8em;
+  }
+}
 .benefit__content {
   position: relative;
 }
 .benefit__body {
   position: relative;
   background: white;
-  bottom: 205px;
+  bottom: 130px;
   display: flex;
   padding: 70px 67px 71px 73px;
   gap: 30px;
@@ -2813,6 +2816,11 @@ body._lock {
   display: flex;
   gap: 46px;
 }
+@media (max-width: 525px) {
+  .benefit__column {
+    gap: 15px;
+  }
+}
 .benefit__textblock {
   display: flex;
   flex-direction: column;
@@ -2823,6 +2831,11 @@ body._lock {
   width: 100%;
   line-height: 162%;
   font-size: 1.1em;
+}
+@media (max-width: 425px) {
+  .benefit__text {
+    font-size: 0.8em;
+  }
 }
 .benefit .decor {
   display: flex;
@@ -2895,10 +2908,6 @@ body._lock {
 
 .page {
   flex: 1 1 auto;
-}
-
-.footer {
-  margin-top: 513px;
 }
 
 .swiper-horizontal > .swiper-scrollbar,
